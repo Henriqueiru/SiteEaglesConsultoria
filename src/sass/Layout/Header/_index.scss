@@ -1,0 +1,30 @@
+header {
+  position: relative;
+  overflow: hidden;
+  margin-top: 72px;
+  height: calc(100vh - 72px);
+  .row {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    .slider {
+      background: red;
+
+      .col-img {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        img {
+          width: 100%;
+
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
