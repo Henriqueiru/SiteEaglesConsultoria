@@ -1,31 +1,83 @@
 .navbar {
   width: 100%;
+  background: #ffffffff;
   transition: position 1s;
   height: 72px;
-
+  background: transparent;
   position: absolute;
-  z-index: 1068;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
   top: 0;
   left: 0;
+
+
   .row {
     width: 95%;
     max-width: 940px;
     margin: 0 auto;
     height: 100%;
-    ul {
+
+    @media(max-width:900px) {
+      width: 100%;
+      background: #ffffffff;
+
+
+    }
+
+    @import './mobile';
+
+
+    .desktop.on {
+      @media(max-width:900px) {
+
+
+        height: 100vh;
+        z-index: 1068;
+
+      }
+    }
+
+    .desktop {
       display: flex;
       margin: 0;
+
       padding: 0;
       height: 100%;
       width: 100%;
+      margin: 0 auto;
       justify-content: space-evenly;
       align-items: center;
+
+      @media(max-width:900px) {
+
+        background: white;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        position: absolute;
+        height: 0vh;
+        transition: 0.5s;
+        z-index: 1068;
+
+      }
+
+      @media(min-width:900px) {
+
+        display: flex;
+
+      }
+
       .logo {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
+
+        @media(max-width:900px) {
+
+          display: none;
+
+        }
+
         span {
           font-weight: 600;
 
@@ -34,17 +86,20 @@
             @import "./animationLogo";
             @include LetterOne;
           }
+
           .second {
             color: $Second;
             @import "./animationLogo";
             @include LetterTwo;
           }
         }
+
         img {
           width: 40px;
           margin-right: 1vw;
         }
       }
+
       li {
         display: flex;
         justify-content: center;
@@ -52,9 +107,11 @@
         text-align: center;
         overflow: hidden;
         height: 100%;
+
         p {
           font-weight: 600;
         }
+
         list-style: none;
 
         a {
@@ -62,11 +119,17 @@
           position: relative;
           text-align: center;
           transition: width 1s;
-          font-weight: 300;
+          font-weight: 400;
+
+          @media(max-width:900px) {
+            font-size: 1.3em;
+          }
+
           &:hover {
             color: $Second;
             font-weight: 500;
           }
+
           &:hover::after {
             content: "";
             position: absolute;
@@ -86,6 +149,7 @@
             from {
               width: 0;
             }
+
             to {
               width: 100%;
             }

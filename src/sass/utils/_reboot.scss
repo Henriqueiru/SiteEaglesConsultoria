@@ -1,5 +1,6 @@
 @import "./fonts";
 @import "./color";
+
 *,
 *::before,
 *::after {
@@ -30,6 +31,7 @@ body {
   margin: 0;
   font-family: $Geral;
   font-size: 1rem;
+  overflow: initial;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -81,9 +83,11 @@ address {
   font-style: normal;
   line-height: inherit;
 }
+
 ul {
   list-style: none;
 }
+
 ol,
 ul,
 dl {
@@ -338,4 +342,5 @@ template {
 [hidden] {
   display: none !important;
 }
+
 /*# sourceMappingURL=bootstrap-reboot.css.map */

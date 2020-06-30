@@ -36,12 +36,24 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="./src/sass/app.css" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/logo192.png" type="image/x-icon" />
     <link rel="manifest" href="/assets/manifest.json" />
   </head>
   <body>
     <!-- header page  -->
     <header>
+      <img class="big-circle" src="./assets/img/big-eclipse.svg" alt="fundo1" />
+      <img class="big-circle" src="./assets/img/big-eclipse.svg" alt="fundo1" />
+      <img
+        class="medium-circle"
+        src="./assets/img/mid-eclipse.svg"
+        alt="fundo2"
+      />
+      <img
+        class="small-circle"
+        src="./assets/img/small-eclipse.svg"
+        alt="fundo3"
+      />
       <section class="presentation row">
         <div class="introduction">
           <div class="intro-text">
@@ -79,44 +91,35 @@
     <!-- NAVBAR  -->
     <nav class="navbar">
       <section class="row">
+        <div class="device">
+          <div class="logo">
+            <img src="./assets/navbarlogo.png" alt="logo" />
+            <span
+              ><span class="firt">Eagles</span>
+              <span class="second">Consultoria</span></span
+            >
+          </div>
+          <ul icon-menu>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
         <ul class="desktop">
           <li class="logo">
             <img src="./assets/navbarlogo.png" alt="logo" />
             <span
-              ><span class="firt">EAGLES</span>
+              ><span class="firt">Eagles</span>
               <span class="second">Consultoria</span></span
             >
           </li>
           <li><a href="/" class="a-hover">Inicio</a></li>
-          <li><a href="/" class="a-hover">Aprenda</a></li>
+          <li><a href="/" class="a-hover">Portal do Aluno</a></li>
           <li><a href="/" class="a-hover">Cursos</a></li>
         </ul>
       </section>
     </nav>
 
-    <!-- container index on the page -->
-    <!-- <main>
-      <div class="laptop-select">
-        <img src="./assets/img/arrow-left.svg" alt="dot" />
-        <img src="./assets/img/dot.svg" alt="dot" />
-        <img src="./assets/img/dot-full.svg" alt="dot" />
-        <img src="./assets/img/dot-full.svg" alt="dot" />
-        <img src="./assets/img/dot-full.svg" alt="dot" />
-        <img src="./assets/img/arrow-right.svg" alt="dot" />
-      </div>
-
-      <img class="big-circle" src="./assets/img/big-eclipse.svg" alt="fundo1" />
-      <img
-        class="medium-circle"
-        src="./assets/img/mid-eclipse.svg"
-        alt="fundo2"
-      />
-      <img
-        class="small-circle"
-        src="./assets/img/small-eclipse.svg"
-        alt="fundo3"
-      />
-    </main> -->
-    <script src="script.js"></script>
+    <script src="./src/index.js" type="module"></script>
   </body>
 </html>
