@@ -547,8 +547,8 @@ header .row {
   height: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
+  -ms-grid-columns: 2fr 3fr;
+      grid-template-columns: 2fr 3fr;
 }
 
 header .row .slider {
@@ -560,6 +560,9 @@ header .row .slider .col-img {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .row .slider .col-img img {
