@@ -11,23 +11,59 @@
   z-index: 1068;
   .row {
     width: 95%;
-    max-width: 940px;
+    max-width: 1200px;
     margin: 0 auto;
     height: 100%;
-
+    display: flex;
+    justify-content: space-between;
     @media (max-width: 900px) {
       width: 100%;
       background: #ffffffff;
     }
 
     @import "./mobile";
+    .logo {
+      flex-direction: row;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+
+      width: 90%;
+      max-width: 300px;
+      @media (max-width: 900px) {
+        display: none;
+      }
+
+      span {
+        font-weight: 600;
+
+        .firt {
+          color: $First;
+          @import "./animationLogo";
+          @include LetterOne;
+        }
+
+        .second {
+          color: $Second;
+          @import "./animationLogo";
+          @include LetterTwo;
+        }
+      }
+
+      img {
+        width: 40px;
+        margin-right: 1vw;
+      }
+    }
 
     .desktop.on {
       @media (max-width: 900px) {
         transition: padding 0.5s;
         height: auto;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.185);
         z-index: 1068;
-        padding: 10vh 0;
+        padding: 8vh 0;
       }
     }
 
@@ -43,54 +79,20 @@
       align-items: center;
 
       @media (max-width: 900px) {
-        background: white;
         display: flex;
         overflow: hidden;
         padding: 0vh 0;
         flex-direction: column;
         justify-content: flex-start !important;
-        align-items: center;
-        place-items: center;
+        background: rgb(255, 255, 255);
         position: absolute;
         height: 0;
         transition: padding 0.5s;
-        z-index: 1068;
+        z-index: -1;
       }
 
       @media (min-width: 900px) {
         display: flex;
-      }
-
-      .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-
-        @media (max-width: 900px) {
-          display: none;
-        }
-
-        span {
-          font-weight: 600;
-
-          .firt {
-            color: $First;
-            @import "./animationLogo";
-            @include LetterOne;
-          }
-
-          .second {
-            color: $Second;
-            @import "./animationLogo";
-            @include LetterTwo;
-          }
-        }
-
-        img {
-          width: 40px;
-          margin-right: 1vw;
-        }
       }
 
       li {
@@ -100,12 +102,12 @@
         text-align: center;
         overflow: hidden;
         height: 100%;
-
+        padding: 59px;
         // mobile
         @media (max-width: 900px) {
-          margin: 5vh 0;
+          margin: 0 0;
           display: block;
-          height: auto;
+          height: 0;
         }
 
         p {
@@ -119,15 +121,52 @@
           position: relative;
           text-align: center;
           transition: width 1s;
-          font-weight: 400;
+          font-weight: 600;
+          font-size: 20px;
+          display: flex;
+          align-items: center;
+          color: $color1;
+          height: 100%;
+          justify-content: center;
 
+          span {
+            [name="home"] {
+              margin-top: -1vh;
+            }
+            [name="enter"] {
+              @media (max-width: 900px) {
+                margin-right: 5vw;
+              }
+            }
+            ion-icon {
+              margin: 0;
+              padding: 0;
+              @media (max-width: 900px) {
+                align-items: center;
+                justify-content: left;
+                margin-right: 4vw;
+              }
+            }
+            &:nth-child(2) {
+              font-size: 14px;
+              @media (max-width: 900px) {
+                margin-left: -0.2vw;
+              }
+            }
+            &:nth-child(1) {
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-right: 1vw;
+            }
+          }
           @media (max-width: 900px) {
             font-size: 1.5em;
             position: relative;
             font-weight: 600;
 
             &::after {
-              content: "";
               position: absolute;
               left: 0;
               right: 0;
@@ -144,22 +183,6 @@
 
           &:hover {
             color: $Second;
-            font-weight: 500;
-          }
-
-          &:hover::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-
-            z-index: 1068;
-
-            top: 1.8em;
-            height: 3px;
-
-            background: $Second;
-            animation: 0.5s effect cubic-bezier(0.25, 0.46, 0.45, 0.94);
           }
 
           @keyframes effect {
