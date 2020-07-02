@@ -29,14 +29,16 @@ section {
 
 body {
   margin: 0;
+  background: blue;
   font-family: $Geral;
   font-size: 1rem;
   overflow: initial;
   font-weight: 400;
+  height: 100%;
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #eeeeee;
+  background: white;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {

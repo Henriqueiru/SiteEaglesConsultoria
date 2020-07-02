@@ -84,7 +84,7 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.intro-text p {
+.intro-text p { 
   margin-top: 5px;
   font-size: 18px;
   color: #585772;

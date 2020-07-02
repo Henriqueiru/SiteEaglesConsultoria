@@ -1,7 +1,7 @@
 export default function ShowSlides() {
   const Slide = document.querySelectorAll(".col-img");
   let index = 0;
-  let time = 6000;
+  let time = 4000;
 
   Slide[index].classList.add("active");
 
