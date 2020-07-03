@@ -1,1 +1,1 @@
-import "./sass/login";
+import "./sass/login.scss";
