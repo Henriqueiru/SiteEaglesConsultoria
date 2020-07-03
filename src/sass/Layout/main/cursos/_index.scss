@@ -1,0 +1,104 @@
+.cursos {
+    width: 100%;
+
+
+    img {
+        width: 100%;
+    }
+
+    padding: 5vh 0;
+
+
+    .row {
+        background-color: transparent;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+
+        .cursos-titles {
+            width: 90%;
+            max-width: 550px;
+            margin: 0 auto;
+            padding: 10vh 0;
+
+            h1 {
+                color: #eeee;
+                text-align: center;
+                font-size: 56px;
+                font-weight: 300;
+                color: rgba(0, 0, 0, 0.842);
+            }
+
+            p {
+                text-align: center;
+                color: rgba(0, 0, 0, 0.685);
+                text-align: center;
+                font-size: 28px;
+                font-weight: 300;
+
+                width: 90%;
+                max-width: 550px;
+                margin: 0px auto;
+
+                @media(max-width:900px) {
+                    font-size: calc(24px + (4 / 900) * 100 * 1vmax);
+
+                }
+            }
+
+        }
+
+
+
+        .cards {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            padding: 10vh 0;
+
+            // DEVICE
+            @media(max-width:900px) {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                width: 90%;
+                max-width: 550px;
+                margin: 0 auto;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: transparent;
+                background-clip: border-box;
+                border-radius: 2vh 2vw 0 0;
+
+
+                img {
+                    border-radius: 2vh 2vh 2vh 2vh;
+                }
+
+                .card-body {
+                    flex: 1 1 auto;
+                    padding: 1rem 1rem;
+                    margin: 2vh 0;
+
+
+                    h2 {
+                        padding: 2vh 0;
+                        color: rgba(0, 0, 0, 0.842);
+                    }
+
+                    p {
+                        color: rgba(0, 0, 0, 0.685);
+                    }
+                }
+            }
+        }
+    }
+
+}
