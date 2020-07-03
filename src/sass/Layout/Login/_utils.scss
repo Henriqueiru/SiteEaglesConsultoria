@@ -61,6 +61,10 @@ section.dropdreg .content-drop input {
     font-weight: 500;
     transition: opacity 0.2s;
 
+    @media(max-width: 900px) {
+        margin-top: 8px;
+    }
+
     span {
         display: flex;
         height: 100%;
@@ -69,6 +73,10 @@ section.dropdreg .content-drop input {
 
 
         img {
+            @media(max-width: 900px) {
+                display: flex !important;
+                width: 30px !important;
+            }
 
             width: 20px !important;
         }

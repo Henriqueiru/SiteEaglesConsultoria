@@ -6,7 +6,6 @@ body {
 
 .logon-container {
   width: 100%;
-
   max-width: 1120px;
   height: 100vh;
   margin: 0 auto;
@@ -28,6 +27,10 @@ body {
     form {
       margin-top: 50px;
       margin-bottom: 12px;
+
+      @media(max-width: 900px) {
+        margin-top: 25px;
+      }
 
       h1 {
         font-size: 32px;
