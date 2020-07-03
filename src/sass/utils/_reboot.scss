@@ -1,5 +1,6 @@
 @import "./fonts";
 @import "./color";
+@import "../Layout/Login/login";
 
 *,
 *::before,
@@ -345,4 +346,20 @@ template {
   display: none !important;
 }
 
+<<<<<<< HEAD
 /*# sourceMappingURL=bootstrap-reboot.css.map */
+=======
+input,
+button,
+textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+/*# sourceMappingURL=bootstrap-reboot.css.map */
+>>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c

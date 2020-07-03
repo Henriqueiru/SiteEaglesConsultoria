@@ -1,6 +1,10 @@
 header {
   position: relative;
+<<<<<<< HEAD
   overflow: hidden;
+=======
+
+>>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
   margin-top: 72px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,6 +26,10 @@ header {
     opacity: 0.5;
 
     height: 80%;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
     @media (max-width: 900px) {
       display: none;
     }
@@ -34,6 +42,10 @@ header {
     z-index: -1;
     height: 60%;
     opacity: 0.4;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
     @media (max-width: 900px) {
       display: none;
     }
@@ -43,7 +55,12 @@ header {
     position: absolute;
     bottom: 0%;
     left: 20%;
+<<<<<<< HEAD
     z-index: -1;
+=======
+    z-index: 1;
+
+>>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
     @media (max-width: 900px) {
       display: none;
     }
@@ -75,21 +92,41 @@ header {
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
+<<<<<<< HEAD
       @media (max-width: 900px) {
         min-height: 100%;
       }
       .intro-text {
         padding: 10vh 0;
         margin-top: 3em;
+=======
+
+      @media (max-width: 900px) {
+        min-height: 100%;
+      }
+
+      .intro-text {
+        padding: 10vh 0;
+        margin-top: 3em;
+
+>>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
         @media (max-width: 900px) {
           text-align: center;
           padding: 0;
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
         h1 {
           font-size: 47px;
           font-weight: 600;
 
           flex: 1;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
           @media (max-width: 900px) {
             font-size: 24px;
           }
@@ -98,6 +135,10 @@ header {
         p {
           flex: 1;
           font-size: 18px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
           @media (max-width: 900px) {
             margin-top: 36px;
             font-size: 16px;
@@ -159,17 +200,32 @@ header {
       position: relative;
       margin-top: 72px;
       min-height: calc(100vh - 72px);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
       @media (max-width: 900px) {
         min-height: 50vh;
         margin-top: 12px;
       }
+<<<<<<< HEAD
       filter: drop-shadow(0px 5px 3px black);
       animation: drop 1.5s ease;
+=======
+
+      filter: drop-shadow(0px 5px 3px black);
+      animation: drop 1.5s ease;
+
+>>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
       @keyframes drop {
         from {
           opacity: 0;
           transform: translateY(-80px);
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
         to {
           opacity: 1;
           transform: translateY(0px);
