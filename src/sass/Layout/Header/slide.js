@@ -1,7 +1,3 @@
-import Glide, {
-  Swipe,
-  Autoplay,
-  Images,
-} from "@glidejs/glide/dist/glide.modular.esm";
+import Glide, { Swipe, Autoplay } from "@glidejs/glide/dist/glide.modular.esm";
 
-new Glide(".glide").mount({ Swipe, startAt: 0 });
+new Glide(".glide").mount({ Swipe, Autoplay });
