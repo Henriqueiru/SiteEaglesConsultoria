@@ -205,8 +205,16 @@ header {
       }
 
       .glide__bullets {
+        button.glide__bullet--active {
+          background: rgba(245, 13, 13, 0.726);
+        }
+
         button {
           background: rgba(0, 0, 0, 0.726);
+
+          &:hover {
+            background: rgba(245, 13, 13, 0.726);
+          }
         }
       }
     }
