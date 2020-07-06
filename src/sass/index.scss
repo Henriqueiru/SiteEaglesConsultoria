@@ -2,3 +2,8 @@
 @import "./Layout/Navbar/index";
 @import "./Layout/Header/index";
 @import './Layout/main/cursos/index';
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";

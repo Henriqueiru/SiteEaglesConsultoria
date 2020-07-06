@@ -1,14 +1,7 @@
-export default function ShowSlides() {
-  const Slide = document.querySelectorAll(".col-img");
-  let index = 0;
-  let time = 4000;
+import Glide, {
+  Swipe,
+  Autoplay,
+  Images,
+} from "@glidejs/glide/dist/glide.modular.esm";
 
-  Slide[index].classList.add("active");
-
-  setInterval(() => {
-    Slide[index].classList.remove("active");
-    index++;
-    if (index === Slide.length) index = 0;
-    Slide[index].classList.add("active");
-  }, time);
-}
+new Glide(".glide").mount({ Swipe, startAt: 0 });

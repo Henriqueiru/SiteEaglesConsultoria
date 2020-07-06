@@ -13,7 +13,7 @@ $duration: 250ms;
   padding-top: 10vh;
   background: rgb(0, 0, 0);
 
-  @media(max-width:900px) {
+  @media (max-width: 900px) {
     padding: 1vh 0;
   }
 
@@ -23,7 +23,7 @@ $duration: 250ms;
     margin: 0vh auto;
     position: relative;
     display: block;
-    @import './mobile';
+    @import "./mobile";
 
     .cursos-titles {
       width: 90%;
@@ -31,7 +31,8 @@ $duration: 250ms;
       margin: 0 auto;
       padding: 10vh 0;
 
-      @media(max-width:900px) {}
+      @media (max-width: 900px) {
+      }
 
       h1 {
         text-align: center;
@@ -61,8 +62,9 @@ $duration: 250ms;
       display: grid;
       grid-template-columns: repeat(3, 100%);
       overflow: hidden;
-
-      @media (max-width: 900px) {}
+      touch-action: manipulation;
+      @media (max-width: 900px) {
+      }
 
       @media (max-width: 900px) {
         display: none;
@@ -92,26 +94,27 @@ $duration: 250ms;
         display: grid;
         grid-template-columns: repeat(5, auto);
         margin: 0px 0;
-
+        touch-action: pan-y;
         @media (max-width: 900px) {
           display: flex;
           width: 100%;
           margin: 0;
         }
 
+        cursor: grab;
         align-items: center;
 
         .item {
-          padding: 0 0px;
+          padding: 0 2px;
           transition: $duration all;
           width: 270px;
           height: 500px;
-
+          touch-action: pan-y;
           @media (max-width: 900px) {
             width: 270px;
             height: 200px;
           }
-
+          margin: 0 0.1cm;
           img {
             width: 100%;
 
@@ -152,23 +155,17 @@ $duration: 250ms;
             top: 0;
             bottom: 0;
             left: 0;
-            background: linear-gradient(-90deg,
-                rgba(0, 0, 0, 0) 0%,
-                rgba(0, 0, 0, 1) 100%);
+            background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
           }
 
           &:nth-of-type(2) {
             top: 0;
             bottom: 0;
             right: 0;
-            background: linear-gradient(90deg,
-                rgba(0, 0, 0, 0) 0%,
-                rgba(0, 0, 0, 1) 100%);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
           }
         }
       }
     }
-
-
   }
 }

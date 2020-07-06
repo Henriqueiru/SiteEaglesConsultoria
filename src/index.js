@@ -9,6 +9,11 @@ import "./sass/Layout/main/cursos";
 import "./sass/Layout/main/cursos/index";
 
 // slideshow computer on the header
-import SlideShow from "./sass/Layout/Header/slide";
+import "./sass/Layout/Header/slide";
 
-window.addEventListener("load", SlideShow);
+import Glide, {
+  Controls,
+  Breakpoints,
+} from "@glidejs/glide/dist/glide.modular.esm";
+
+new Glide(".glide").mount({ Controls, Breakpoints });

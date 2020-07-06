@@ -22,14 +22,22 @@
 
     .crl {
         display: flex;
-        width: 300px;
+        width: 175px;
+        height: 375px;
         padding: 0 0vw;
-        height: 500px;
+        position: relative;
+        z-index: 1;
+
+        &:hover {
+            transform: scale(1.2);
+            padding: 0 20px;
+            z-index: 999;
+            position: relative;
+        }
 
         img {
-            width: 300px;
-
-            height: 500px;
+            width: 175px;
+            height: 375px;
         }
     }
 }
