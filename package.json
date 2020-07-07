@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
+    "rellax": "^1.12.1",
     "swiper": "^6.0.0"
   }
 }

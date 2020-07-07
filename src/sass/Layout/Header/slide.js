@@ -1,3 +1,13 @@
-import Glide, { Swipe, Autoplay } from "@glidejs/glide/dist/glide.modular.esm";
+import Glide from "@glidejs/glide";
 
-new Glide(".glide").mount({ Swipe, Autoplay });
+if (document.querySelector(".glide")) {
+  new Glide(".glide", {
+    type: "carousel",
+    hoverpause: true,
+    perView: 1,
+
+    autoplay: true,
+    autoplay: 4000,
+    animationDuration: 1000,
+  }).mount();
+}

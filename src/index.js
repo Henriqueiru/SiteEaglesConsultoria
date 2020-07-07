@@ -9,11 +9,6 @@ import "./sass/Layout/main/cursos";
 import "./sass/Layout/main/cursos/index";
 
 // slideshow computer on the header
+// text effect scrooll
+import "./sass/Layout/Header/textEffect";
 import "./sass/Layout/Header/slide";
-
-import Glide, {
-  Controls,
-  Breakpoints,
-} from "@glidejs/glide/dist/glide.modular.esm";
-
-new Glide(".glide").mount({ Controls, Breakpoints });
