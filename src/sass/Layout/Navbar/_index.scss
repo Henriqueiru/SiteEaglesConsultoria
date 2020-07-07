@@ -1,13 +1,12 @@
 .navbar {
   width: 100%;
-  background: #ffffffff;
+  background: transparent;
   transition: position 1s;
   height: 72px;
-  position: fixed;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: 1068;
+  z-index: 1062;
 
   .row {
     width: 95%;
@@ -16,14 +15,13 @@
     height: 100%;
     display: flex;
     justify-content: space-between;
-
+    background: transparent;
     @media (max-width: 900px) {
       width: 100%;
       background: #ffffffff;
     }
 
     @import "./mobile";
-
 
     .logo {
       flex-direction: row;
@@ -75,10 +73,9 @@
     // BROWSER CONFIG NAV
     .desktop {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: baseline;
       align-items: center;
 
-      width: 100%;
       height: 100%;
 
       margin: 0;
@@ -113,9 +110,8 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        overflow: hidden;
-        height: 100%;
-        padding: 59px;
+
+        padding: 30px;
 
         // mobile
         @media (max-width: 900px) {
@@ -139,10 +135,14 @@
           font-size: 20px;
           display: flex;
           align-items: center;
-          color: $color1;
+          color: rgb(93, 92, 92);
           height: 100%;
           justify-content: center;
-
+          width: 100%;
+          height: 100%;
+          border: 2px solid;
+          padding: 8px 16px;
+          border-radius: 1em;
           // CONFIG ICONS AND LINKS
           span {
             [name="home"] {

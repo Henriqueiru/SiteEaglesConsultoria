@@ -1,10 +1,9 @@
 header {
   position: relative;
 
-  margin-top: 72px;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(100vh - 72px);
+  height: 100vh;
 
   @media (max-width: 900px) {
     overflow: initial;
@@ -64,6 +63,7 @@ header {
     grid-template-rows: 100vh;
     gap: 4ch;
     transition: 0.1s;
+    place-items: center;
 
     @media (max-width: 900px) {
       display: flex;
@@ -76,8 +76,8 @@ header {
 
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: center;
 
       @media (max-width: 900px) {
         min-height: 100%;
@@ -95,7 +95,7 @@ header {
         h1 {
           font-size: 47px;
           font-weight: 600;
-
+          color: $color1;
           flex: 1;
 
           @media (max-width: 900px) {
@@ -120,6 +120,7 @@ header {
       }
 
       .cta {
+        width: 100%;
         @media (max-width: 900px) {
           width: 100%;
           display: flex;
@@ -138,51 +139,40 @@ header {
           margin: 2.5vh 1em;
 
           &:nth-child(1) {
-            color: $Second;
+            color: $Hover;
             background: transparent;
-            border: 2px solid $Second;
+            border: 2px solid $Hover;
             transition: 0.2s;
-
-            &:hover {
-              color: $First;
-              border: 2px solid $First;
-            }
           }
 
           &:nth-child(2) {
             border: none;
-            background-color: $Second;
+            background-color: $Hover;
             color: white;
             transition: 0.2s;
-
-            &:hover {
-              border: none;
-              background-color: $First;
-              color: white;
-            }
           }
         }
       }
     }
 
     .glide {
-
       width: 100%;
-      height: 80%;
+      height: 100%;
 
-      @media(max-width:900px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 900px) {
         height: 100%;
       }
 
       .glide__track {
         width: 100%;
 
-
         ul {
-
           width: 100%;
 
-          @media(max-width:900px) {
+          @media (max-width: 900px) {
             height: 100%;
           }
 
@@ -192,27 +182,29 @@ header {
             align-items: center;
             color: yellow;
 
-            @media(max-width:900px) {
+            @media (max-width: 900px) {
               height: 100%;
             }
 
             img {
-              width: 100%;
-
+              width: 80%;
             }
           }
         }
       }
 
       .glide__bullets {
+        margin-top: -50px;
         button.glide__bullet--active {
-          background: rgba(245, 13, 13, 0.726);
+          background: rgba(255, 255, 255, 0.89);
+          border-color: rgba(0, 0, 0, 0.726);
         }
 
         button {
           background: rgba(0, 0, 0, 0.726);
-
-
+          height: 20px;
+          width: 20px;
+          margin: 0 1em;
         }
       }
     }
