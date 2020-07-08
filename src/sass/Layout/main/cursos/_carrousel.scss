@@ -4,7 +4,8 @@
   overflow: hidden;
   padding: 10vh 0;
 
-  @media (max-width: 900px) {}
+  @media (max-width: 900px) {
+  }
 
   @media (max-width: 900px) {
     display: none;
@@ -47,11 +48,10 @@
 
     .item {
       min-width: 20%;
-      margin: 0 4px;
+
       position: relative;
       transition: 0.3s ease all;
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-      transform: rotate(-30deg) skew(30deg) scale(0.5);
 
       @media (max-width: 900px) {
         width: 270px;
@@ -63,7 +63,9 @@
       &:hover {
         z-index: 1;
 
-        z-index: 1;
+        -webkit-box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.75);
+        box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.75);
       }
 
       img {
@@ -87,12 +89,10 @@
       }
 
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.2);
         transform-origin: center;
       }
     }
-
-
 
     a {
       position: absolute;
@@ -112,16 +112,16 @@
         display: none;
       }
 
-      &[id="section1"]:target~#section1 {
+      &[id="section1"]:target ~ #section1 {
         transform: translate3d(0, 0, 0);
         background: red;
       }
 
-      &[id="section2"]:target~#section2 {
+      &[id="section2"]:target ~ #section2 {
         transform: translate3d(0, -100%, 0);
       }
 
-      &[id="section3"]:target~#section3 {
+      &[id="section3"]:target ~ #section3 {
         transform: translate3d(0, -300%, 0);
       }
 
@@ -129,18 +129,22 @@
         top: 0;
         bottom: 0;
         left: 0;
-        background: linear-gradient(-90deg,
-            rgba(0, 0, 0, 0) 0%,
-            rgba(0, 0, 0, 1) 100%);
+        background: linear-gradient(
+          -90deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 1) 100%
+        );
       }
 
       &:nth-of-type(2) {
         top: 0;
         bottom: 0;
         right: 0;
-        background: linear-gradient(90deg,
-            rgba(0, 0, 0, 0) 0%,
-            rgba(0, 0, 0, 1) 100%);
+        background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 1) 100%
+        );
       }
     }
   }
