@@ -1,14 +1,13 @@
-export default function ShowSlides() {
-  const Slide = document.querySelectorAll(".col-img");
-  let index = 0;
-  let time = 4000;
+import Glide from "@glidejs/glide";
 
-  Slide[index].classList.add("active");
+if (document.querySelector(".glide")) {
+  new Glide(".glide", {
+    type: "carousel",
+    hoverpause: true,
+    perView: 1,
 
-  setInterval(() => {
-    Slide[index].classList.remove("active");
-    index++;
-    if (index === Slide.length) index = 0;
-    Slide[index].classList.add("active");
-  }, time);
+    autoplay: true,
+    autoplay: 4000,
+    animationDuration: 1000,
+  }).mount();
 }

@@ -1,8 +1,9 @@
 .navbar {
   width: 100%;
-  background: #ffffffff;
+  background: transparent;
   transition: position 1s;
   height: 72px;
+<<<<<<< HEAD
 <<<<<<< HEAD
   background: transparent;
 =======
@@ -324,3 +325,12 @@
     }
   }
 }
+=======
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1062;
+
+  @import './row';
+}
+>>>>>>> 95a271c9fd806e5c00f7e2fffb9c52ca15c6996a

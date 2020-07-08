@@ -1,30 +1,29 @@
 header {
   position: relative;
 <<<<<<< HEAD
+<<<<<<< HEAD
   overflow: hidden;
 =======
 
 >>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
   margin-top: 72px;
+=======
+>>>>>>> 95a271c9fd806e5c00f7e2fffb9c52ca15c6996a
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(100vh - 72px);
+  height: 100vh;
+  overflow: hidden;
 
-  @media (max-width: 900px) {
+  @media only screen and(max-width: 1200px) {
     overflow: initial;
     height: 100%;
-    padding: 0vh 0;
-
+    padding: 1vh 0;
     margin-top: 50px;
+
   }
 
-  .big-circle {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: -1;
-    opacity: 0.5;
 
+<<<<<<< HEAD
     height: 80%;
 <<<<<<< HEAD
 =======
@@ -64,15 +63,39 @@ header {
     @media (max-width: 900px) {
       display: none;
     }
+=======
+  @media only screen and(max-width: 992px) {
+    overflow: initial;
+    height: 100%;
+    padding: 1vh 0;
+    margin-top: 60px;
+
+
   }
 
-  .row {
-    width: 90%;
-    position: relative;
-    z-index: 2;
-    max-width: 1186px;
-    margin: 0 auto;
+  @media only screen and(max-width: 768px) {
+    overflow: initial;
     height: 100%;
+    padding: 1vh 0;
+    margin-top: 60px;
+
+
+  }
+
+  @media only screen and(max-width: 575px) {
+    overflow: initial;
+    height: 100%;
+    padding: 1vh 0;
+    margin-top: 60px;
+
+
+>>>>>>> 95a271c9fd806e5c00f7e2fffb9c52ca15c6996a
+  }
+
+  @media only screen and(max-width: 411px) {
+    overflow: initial;
+    height: 100%;
+<<<<<<< HEAD
     display: grid;
     grid-template-columns: 590px 610px;
     grid-template-rows: 100vh;
@@ -252,5 +275,33 @@ header {
         }
       }
     }
+=======
+    padding: 1vh 0;
+    margin-top: 60px;
+
+
   }
+
+  @media only screen and(max-width: 375px) {
+    overflow: initial;
+    height: 100%;
+    padding-top: 32px;
+    margin-top: 60px;
+
+
+>>>>>>> 95a271c9fd806e5c00f7e2fffb9c52ca15c6996a
+  }
+
+  @media only screen and(max-width: 320px) {
+    overflow: initial;
+    height: 100%;
+    padding: 1vh 0;
+    margin-top: 60px;
+
+
+  }
+
+  @import './animation';
+  @import './circles';
+  @import './row';
 }

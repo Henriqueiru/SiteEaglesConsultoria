@@ -22,6 +22,7 @@
 
   .crl {
     display: flex;
+<<<<<<< HEAD
     width: 150px;
     padding: 0 0vw;
     height: 350px;
@@ -29,6 +30,24 @@
     img {
       width: 150px;
       height: 350px;
+=======
+    width: 175px;
+    height: 375px;
+    padding: 0 0vw;
+    position: relative;
+    z-index: 1;
+    margin: 0 3px;
+    &:hover {
+      transform: scale(1.2);
+      padding: 0 20px;
+      z-index: 999;
+      position: relative;
+    }
+
+    img {
+      width: 175px;
+      height: 375px;
+>>>>>>> 95a271c9fd806e5c00f7e2fffb9c52ca15c6996a
     }
   }
 }

@@ -23,7 +23,10 @@ $duration: 250ms;
     margin: 0vh auto;
     position: relative;
     display: block;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 95a271c9fd806e5c00f7e2fffb9c52ca15c6996a
     @import "./mobile";
 
     .cursos-titles {
@@ -59,6 +62,7 @@ $duration: 250ms;
       }
     }
 
+<<<<<<< HEAD
     .wrapper {
       display: grid;
       grid-template-columns: repeat(3, 100%);
@@ -175,5 +179,8 @@ $duration: 250ms;
         }
       }
     }
+=======
+    @import "./carrousel";
+>>>>>>> 95a271c9fd806e5c00f7e2fffb9c52ca15c6996a
   }
 }

@@ -1,0 +1,39 @@
+@import './on';
+
+// BROWSER CONFIG NAV  --- ul
+.desktop {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+
+
+    @media (max-width: 900px) {
+        // CONFIG ON THE DEVICE NAV  -- UP TO SCREEN 900
+        position: absolute;
+
+        display: flex;
+        justify-content: flex-start !important;
+        flex-direction: column;
+
+        height: 0;
+
+        overflow: hidden;
+
+        padding: 0vh 0;
+        background: rgb(255, 255, 255);
+        transition: padding 0.5s;
+        z-index: -1;
+    }
+
+    // BROWSER CONFIG NAV
+    @media (min-width: 900px) {
+        display: flex;
+    }
+
+    // STYLE ON FROM TAG LI 
+    @import './li';
+}

@@ -1,0 +1,22 @@
+.row {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+
+    //  CONFIG ROW 
+    @media (max-width: 900px) {
+        width: 100%;
+
+    }
+
+    @import "./mobile";
+
+    @import './logo';
+    @import './desktop/desktop';
+
+
+}
