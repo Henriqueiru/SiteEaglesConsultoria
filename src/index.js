@@ -1,5 +1,4 @@
 // page home global stylesheet
-import "./sass/index.scss";
 
 // navbar components
 import "./sass/Layout/Navbar/index";
