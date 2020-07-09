@@ -4,7 +4,7 @@ const itemimages = document.querySelectorAll(".item > img");
 itemimages.forEach((element, i) => {
   element.src = Images[i];
 });
-
+// mobile
 Images.map((element) => {
   const content = document.createElement("div");
   content.setAttribute("class", "crl");

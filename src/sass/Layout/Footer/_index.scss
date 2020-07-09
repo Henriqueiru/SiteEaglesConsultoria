@@ -1,71 +1,102 @@
-footer {
-    width: 100%;
-    height: 100px;
-    padding: 24px;
+footer.foot {
 
-    @media only screen and (max-width:800px) {
-        height: auto;
+
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+
+
+    @media only screen and (max-width:414px) {
+        padding: 32px 0;
+
     }
 
     .row {
         width: 90%;
-        max-width: 1200px;
-        height: 100%;
+        max-width: 940px;
         margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        place-content: center;
-        place-items: center;
-        font-family: $Global;
+        padding: 4vh 0;
 
-        @media only screen and (max-width:800px) {
-            grid-template-columns: 1fr;
+        @media only screen and (max-width:414px) {
+            padding: 32px 0;
         }
 
-        .copyright {
-            font-size: 18px;
+        .col-top,
+        .logo,
+        .col-button {
+            width: 100%;
+            max-width: 500px;
+            margin: 24px auto;
 
-            @media only screen and (max-width:800px) {
-                padding: 16px 0;
-            }
+
         }
 
         .logo {
-            @media only screen and (max-width:800px) {
-                padding: 16px 0;
-            }
-
-            width: 100%;
             display: flex;
             justify-content: center;
+            align-items: center;
 
             img {
-                width: 48px;
+                width: 100px;
+
             }
         }
 
-        .msl {
-            @media only screen and (max-width:800px) {
-                padding: 16px 0;
-                flex-direction: row;
-            }
+        .col-top {
 
-            height: 100px;
-            padding: 0;
-            margin: 0;
-            justify-content: center;
+            text-align: center;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
 
-            li a {
+            p {
                 font-size: 14px;
+                font-family: $RobotoSlab;
+                font-weight: 500;
+                text-transform: uppercase;
 
-                @media only screen and (max-width:800px) {
-                    margin: 0 16px;
+                a {
+                    color: rgb(255, 79, 79);
+                    font-family: $Roboto;
+                    font-weight: 900;
+                }
+            }
+        }
+
+        .col-button {
+
+            margin-top: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icons {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                max-width: 371px;
+                margin: 0 auto;
+
+                a {
+
+                    width: 28px;
+                    display: flex;
+                    margin-right: 24px;
+                    margin-left: 24px;
+
+                    &:nth-child(1) {
+                        margin-top: -0.25555em;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
                 }
             }
         }
     }
-
 }
