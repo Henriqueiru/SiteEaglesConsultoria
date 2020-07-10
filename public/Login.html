@@ -34,14 +34,14 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#ffffff" />
-
+    <link rel="stylesheet" href="../src/sass/login.scss" />
     <!-- favicon -->
     <link rel="shortcut icon" href="/assets/logo192.png" type="image/x-icon" />
   </head>
   <body>
     <div class="logon-container">
-      <section class="form">
-        <img src="/assets/eaglelogologin.png" alt="Eagles Logo" />
+      <section class="form right">
+        <img src="/assets/img/logo/logo500low.png" alt="Eagles Logo" />
 
         <form>
           <h1>Faça seu Log In</h1>
@@ -60,9 +60,40 @@
           </a>
         </form>
       </section>
-      <img class="backgrounimg" src="/assets/img/noname.png" alt="eagles" />
+      <div class="product" id="#product">
+        <img class="backgrounimg" src="/assets/img/celular.png" alt="eagles" />
+      </div>
     </div>
 
     <script src="../src/login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script>
+      TweenMax.from(".right", 1.6, {
+        delay: 2,
+        left: 0,
+        opacity: 0,
+      });
+      TweenMax.to(".right", 3, {
+        delay: 2,
+        left: 1,
+        opacity: 1,
+      });
+      TweenMax.from(".product img", 2, {
+        delay: 3,
+        // opacity: 0,
+        // y: 0,
+        scale: 0,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.to(".product img", 2, {
+        delay: 3,
+        // opacity: 1,
+        // y: 20,
+        scale: 1,
+        ease: Expo.easeInOut,
+      });
+    </script>
   </body>
 </html>

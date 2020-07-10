@@ -5,13 +5,12 @@ $duration: 250ms;
   width: 100%;
 
   position: relative;
-
+  z-index: 1;
   img {
     width: 100%;
   }
 
   padding-top: 10vh;
-  background: rgb(0, 0, 0);
 
   @media (max-width: 900px) {
     padding: 1vh 0;
@@ -31,14 +30,14 @@ $duration: 250ms;
       margin: 0 auto;
       padding: 10vh 0;
 
-      @media (max-width: 900px) {
-      }
-
       h1 {
         text-align: center;
         font-size: 56px;
         font-weight: 300;
         color: #eeee;
+        @media only screen and(max-width: 900px) {
+          font-size: 32px;
+        }
       }
 
       p {
@@ -52,8 +51,10 @@ $duration: 250ms;
         max-width: 550px;
         margin: 0px auto;
 
-        @media (max-width: 900px) {
-          font-size: calc(24px + (4 / 900) * 100 * 1vmax);
+        @media only screen and(max-width: 900px) {
+          font-size: 18px;
+          margin-top: 1em;
+          line-height: 1;
         }
       }
     }

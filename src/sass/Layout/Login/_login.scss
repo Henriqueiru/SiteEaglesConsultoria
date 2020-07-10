@@ -1,8 +1,8 @@
 body {
-  background: #f0f0f5 !important;
+  background: url(/assets/background.gif) !important;
+  background-size: cover;
+  color: #fff !important;
 }
-
-
 
 .logon-container {
   width: 100%;
@@ -13,9 +13,41 @@ body {
   align-items: center;
   justify-content: space-between;
 
+  .product {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    animation: animate 4s ease-in-out infinite;
+  }
+  @keyframes animate {
+    0% {
+      transform: translate(-50%, -46%);
+    }
+
+    50% {
+      transform: translate(-50%, -54%);
+    }
+
+    100% {
+      transform: translate(-50%, -46%);
+    }
+  }
+
+  @keyframes animatedScale {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
   .form {
     width: 90%;
     max-width: 350px;
+    position: relative;
+
     margin-right: 30px;
 
     img {
@@ -28,7 +60,7 @@ body {
       margin-top: 50px;
       margin-bottom: 12px;
 
-      @media(max-width: 900px) {
+      @media (max-width: 900px) {
         margin-top: 25px;
       }
 
@@ -36,8 +68,7 @@ body {
         font-size: 32px;
         margin-bottom: 22px;
         font-weight: 300;
-        color: #c70365;
-
+        color: $Second;
       }
 
       input {
@@ -47,4 +78,4 @@ body {
   }
 }
 
-@import './responsive';
+@import "./responsive";
