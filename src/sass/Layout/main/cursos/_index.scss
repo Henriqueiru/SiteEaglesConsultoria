@@ -1,11 +1,10 @@
-$itemGrow: 1.2;
-$duration: 250ms;
-
+@import "./carrousel";
 .cursos {
   width: 100%;
 
   position: relative;
   z-index: 1;
+
   img {
     width: 100%;
   }
@@ -58,7 +57,5 @@ $duration: 250ms;
         }
       }
     }
-
-    @import "./carrousel";
   }
 }

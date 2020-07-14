@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <title>Eagles Consultoria</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="content-language" content="pt-br, en-US, fr" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="expires" content="Mon, 22 jul 2006 11:12:01 GMT" />
+    <!-- <meta
+      http-equiv="refresh"
+      content="15;url=http://192.168.0.107:5500/index.html"
+    /> -->
+
+    <meta name="author" content="Mateus" />
+    <meta
+      name="description"
+      content="Aprenda Pacote Office completo, Excel avançado, Word, PowerPoint,
+    Redes Sociais, Windows 10, Chrome, Inglês, Música e muito mais.
+    Aulas Atualizadas online ou presenciais. Basta se cadastrar em uma
+    de nossas aulas e aprimorar seus conhecimentos!"
+    />
+    <meta name="keywords" content="Office, word, Excel, Chorme, inglês" />
+
+    <meta name="copyright" content="© 2020 Henrique Lima" />
+
+    <meta name="generator" content="vscode editor microsoft" />
+
+    <meta name="rating" content="general" />
+    <meta name="robots" content="noimageindex, noarchive" />
+    <!-- <meta name="robots" content="index,follow" /> -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="../src/sass/Layout/cadastro/index.scss" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/assets/logo192.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div className="register-container">
+      <div className="content">
+        <section>
+          <img src="" alt="eagles" />
+          <h1>Cadastro</h1>
+          <p>
+            Faça seu cadastro para ter acesso, a plataforma e ajuda as pessoas
+            encontar casos da sua ong
+          </p>
+          <a class="back-link" href="">
+            <span>
+              <img src="./assets/img/icon/log-in.svg" alt="icon Login"
+            /></span>
+            <p>Não tenho cadastro</p>
+          </a>
+        </section>
+        <form>
+          <p className="aviso"></p>
+          <input type="text" value="name" placeholder="Nome da ONG" />
+          <input type="email" value="email" placeholder="E-mail" />
+          <input type="senha" value="senha" placeholder="senha" />
+          <input value="whatsapp" placeholder="WhatsApp" />
+          <div className="input-group">
+            <input value="city" placeholder="Cidade" />
+
+            <input value="uf" placeholder="UF" />
+          </div>
+          <button className="button">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../src/login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script>
+      TweenMax.from(".right", 1.6, {
+        delay: 2,
+        left: 0,
+        opacity: 0,
+      });
+      TweenMax.to(".right", 3, {
+        delay: 2,
+        left: 1,
+        opacity: 1,
+      });
+      TweenMax.from(".product img", 2, {
+        delay: 3,
+        // opacity: 0,
+        // y: 0,
+        scale: 0,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.to(".product img", 2, {
+        delay: 3,
+        // opacity: 1,
+        // y: 20,
+        scale: 1,
+        ease: Expo.easeInOut,
+      });
+    </script>
+  </body>
+</html>
