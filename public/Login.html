@@ -38,12 +38,12 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="/assets/logo192.png" type="image/x-icon" />
   </head>
-  <body>
+  <body class="hove">
     <div class="logon-container">
       <section class="form right">
         <img src="/assets/img/logo/logo500low.png" alt="Eagles Logo" />
 
-        <form>
+        <form class="items">
           <h1>Faça seu Log In</h1>
           <input type="text" placeholder="Email" />
           <input type="password" placeholder="senha" />
@@ -69,15 +69,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script>
-      TweenMax.from(".right", 1.6, {
+      TweenMax.from(".righ", 1.6, {
         delay: 2,
         left: 0,
         opacity: 0,
       });
-      TweenMax.to(".right", 3, {
+      TweenMax.to(".righ", 3, {
         delay: 2,
         left: 1,
         opacity: 1,
+        x: -20,
+      });
+
+      TweenMax.from(".form", 2, {
+        delay: 1.6,
+        opacity: 0,
+        x: -30,
+
+        ease: Expo.easeInOut,
       });
       TweenMax.from(".product img", 2, {
         delay: 3,

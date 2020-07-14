@@ -20,6 +20,7 @@ body {
     transform: translate(-50%, -50%);
     animation: animate 4s ease-in-out infinite;
   }
+
   @keyframes animate {
     0% {
       transform: translate(-50%, -46%);
@@ -38,6 +39,7 @@ body {
     from {
       transform: scale(0);
     }
+
     to {
       transform: scale(1);
     }
