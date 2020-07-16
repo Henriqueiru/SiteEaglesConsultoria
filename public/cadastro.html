@@ -39,37 +39,36 @@
     <link rel="shortcut icon" href="/assets/logo192.png" type="image/x-icon" />
   </head>
   <body>
-    <div className="register-container">
-      <div className="content">
-        <section>
-          <img src="" alt="eagles" />
+    <main class="container">
+      <section class="row">
+        <header class="header">
+          <img
+            src="../public/assets/img/logo/logo300low.png"
+            alt="Eagles Consultoria"
+          />
           <h1>Cadastro</h1>
           <p>
             Faça seu cadastro para ter acesso, a plataforma e ajuda as pessoas
             encontar casos da sua ong
           </p>
-          <a class="back-link" href="">
-            <span>
-              <img src="./assets/img/icon/log-in.svg" alt="icon Login"
-            /></span>
-            <p>Não tenho cadastro</p>
-          </a>
-        </section>
-        <form>
-          <p className="aviso"></p>
-          <input type="text" value="name" placeholder="Nome da ONG" />
-          <input type="email" value="email" placeholder="E-mail" />
-          <input type="senha" value="senha" placeholder="senha" />
-          <input value="whatsapp" placeholder="WhatsApp" />
-          <div className="input-group">
-            <input value="city" placeholder="Cidade" />
+        </header>
+        <article class="form">
+          <form>
+            <p class="aviso"></p>
+            <input type="text" placeholder="Nome da ONG" />
+            <input type="email" placeholder="E-mail" />
+            <input type="senha" placeholder="senha" />
+            <input placeholder="WhatsApp" />
+            <div class="input-group">
+              <input placeholder="Cidade" />
 
-            <input value="uf" placeholder="UF" />
-          </div>
-          <button className="button">Cadastrar</button>
-        </form>
-      </div>
-    </div>
+              <input placeholder="UF" />
+            </div>
+            <button class="button">Cadastrar</button>
+          </form>
+        </article>
+      </section>
+    </main>
 
     <script src="../src/login.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

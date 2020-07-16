@@ -14,25 +14,35 @@ import "./sass/Layout/Header/slide";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import { TextPlugin } from "gsap/TextPlugin";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-gsap.defaults({ ease: "power3" });
-gsap.set(".introduction", { y: 0 });
+gsap.registerPlugin(ScrollTrigger, TextPlugin, ScrollToPlugin);
 
-ScrollTrigger.batch(".presentation", {
-  trigger: ".introduction",
-  onEnter: (batch) =>
-    gsap.to(batch, {
-      opacity: 1,
-      y: 100,
-      stagger: { each: 0.15, grid: [1, 3] },
-      overwrite: true,
-    }),
-  onLeave: (batch) => gsap.set(batch, { opacity: 0, y: -100, overwrite: true }),
-  onEnterBack: (batch) =>
-    gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
-  onLeaveBack: (batch) =>
-    gsap.set(batch, { opacity: 0, y: 100, overwrite: true }),
-  // onUpdate: (e) => console.log(e),
-  markers: true,
+gsap.to(".b1", { duration: 2, text: "Seja bem-vindo à", ease: "none" });
+
+gsap.to(".b2", {
+  duration: 2,
+  delay: 2,
+  opacity: 1,
+  text: "Eagles Consultoria",
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".b2",
+    start: "bottom bottom",
+    end: "0",
+    scrub: true,
+  },
+});
+
+gsap.to(".intro-text", {
+  scrollTrigger: {
+    scrub: true,
+    trigger: ".intro-text",
+    // markers: true,
+    start: "top center",
+    end: "top 100px",
+  },
+  ease: "none",
+  opacity: 1,
 });

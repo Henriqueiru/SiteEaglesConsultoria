@@ -15,8 +15,11 @@
     max-width: 100%;
     position: relative;
     left: 50%;
+    margin-top: 4em;
+
     transform: translateX(-50%);
   }
+
   @media only screen and(max-width:900px) {
     justify-content: center;
     width: 100%;
@@ -26,6 +29,7 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
   span {
     font-weight: 600;
 
