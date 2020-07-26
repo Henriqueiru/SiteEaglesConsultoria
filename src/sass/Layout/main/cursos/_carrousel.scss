@@ -4,9 +4,10 @@
   overflow: hidden;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  height: 500px;
+  height: 800px;
 
   scroll-behavior: smooth;
+  transition: 0.2s;
 
   @media (max-width: 900px) {
     display: none;
@@ -21,6 +22,7 @@
 
     height: 500px;
 
+
     @media (max-width: 900px) {
       display: flex;
       width: 100%;
@@ -34,10 +36,12 @@
     .item {
       min-width: 20%;
 
+      width: 300px;
       position: relative;
       transition: 0.3s ease all;
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
       height: 500px;
+      filter: drop-shadow(1em 1em #202020);
 
       @media (max-width: 900px) {
         width: 270px;
@@ -47,9 +51,11 @@
       z-index: 0;
 
       &:hover {
-        transform: scale(1.2);
+        transform: scale(1.2, 1.2);
         z-index: 1;
         transform-origin: center;
+        filter: drop-shadow(0em 0em #202020);
+        perspective: 5.5cm;
       }
 
       img {

@@ -1,17 +1,24 @@
 body {
-  background: url(/assets/background.gif) !important;
+  background: $color1 !important;
   background-size: cover;
   color: #fff !important;
 }
 
 .logon-container {
   width: 100%;
-  max-width: 1120px;
+  background: url(/assets/background.gif) !important;
+  max-width: 100%;
+
   height: 100vh;
-  margin: 0 auto;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media(min-width:780px) {
+    padding: 0 10em;
+    background: url(/assets/background.gif) !important;
+  }
 
   .product {
     position: absolute;
@@ -19,6 +26,10 @@ body {
     left: 70%;
     transform: translate(-50%, -50%);
     animation: animate 4s ease-in-out infinite;
+
+    @media(max-width:1000px) {
+      display: none;
+    }
   }
 
   @keyframes animate {
@@ -52,10 +63,16 @@ body {
 
     margin-right: 30px;
 
+    @media(max-width:1000px) {
+      margin: 0 auto;
+
+    }
+
     img {
       width: 100%;
       max-width: 300px;
       margin: 0 auto;
+      flex: 1;
     }
 
     form {

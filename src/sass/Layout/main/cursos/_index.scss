@@ -1,4 +1,5 @@
 @import "./carrousel";
+
 .cursos {
   width: 100%;
 
@@ -33,7 +34,9 @@
         text-align: center;
         font-size: 56px;
         font-weight: 300;
-        color: #eeee;
+        color: #202020;
+        line-height: 2em;
+
         @media only screen and(max-width: 900px) {
           font-size: 32px;
         }
@@ -41,14 +44,16 @@
 
       p {
         text-align: center;
-        color: #eeee;
+
 
         font-size: 28px;
         font-weight: 300;
-
+        color: #220000;
         width: 90%;
         max-width: 550px;
-        margin: 0px auto;
+
+        line-height: 1.2em;
+        margin: 1em auto 0 auto;
 
         @media only screen and(max-width: 900px) {
           font-size: 18px;
