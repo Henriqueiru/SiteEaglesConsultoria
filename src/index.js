@@ -2,7 +2,7 @@
 
 // navbar components
 import "./sass/Layout/Navbar/index";
-
+import Splide from "@splidejs/splide";
 // component curso js
 import "./sass/Layout/main/cursos";
 import "./sass/Layout/main/cursos/index";
@@ -12,7 +12,7 @@ import "./sass/Layout/main/cursos/index";
 import "./sass/Layout/Header/textEffect";
 import "./sass/Layout/Header/slide";
 
-import { gsap } from "gsap";
+import { gsap, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -26,7 +26,7 @@ gsap.to(".b2", {
   delay: 2,
   opacity: 1,
   text: "Eagles Consultoria",
-  ease: "none",
+  ease: Power3,
   scrollTrigger: {
     trigger: ".b2",
     start: "bottom bottom",
@@ -45,4 +45,30 @@ gsap.to(".intro-text", {
   },
   ease: "none",
   opacity: 1,
+});
+
+// SLIDE CARROUSEL
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#secondary-slider", {
+    fixedWidth: 300,
+    width: "100%",
+
+    focus: false,
+    cover: true,
+    height: "600px",
+    flickPower: 100,
+
+    rewind: true,
+    breakpoints: {
+      768: {
+        fixedWidth: 200,
+        focus: "center",
+        height: 400,
+      },
+    },
+
+    gap: 10,
+    pagination: false,
+  }).mount();
 });

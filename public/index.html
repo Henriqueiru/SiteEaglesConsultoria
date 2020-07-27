@@ -49,11 +49,17 @@
       media="screen"
       href="../src/sass/index.scss?v=8may2013"
     />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@splidejs/splide/dist/css/splide.min.css"
+    />
   </head>
   <body id="css-zen-garden">
     <!-- header page  -->
     <div class="scrolling-page">
+      <!--======================== HEADER   ----START----- ======================= -->
       <header class="animated" style="overflow: hidden;">
+        <!--======================== ANIMATION CARDS CURSOS   ----START----- ======================= -->
         <div class="animation">
           <div
             class="box"
@@ -129,6 +135,11 @@
             "
           ></div>
         </div>
+
+        <!--======================== ANIMATION CARDS CURSOS   ----END----- ======================= -->
+
+        <!--======================== VECTORIES CIRCLES   ----START----- ======================= -->
+
         <img
           class="big-circle"
           src="./assets/img/big-eclipse.svg"
@@ -145,6 +156,11 @@
           src="./assets/img/small-eclipse.svg"
           alt="fundo3"
         />
+
+        <!--======================== VECTORIES    ----END----- ======================= -->
+
+        <!--======================== INFOS    ----START----- ======================= -->
+
         <section class="presentation row">
           <div class="introduction">
             <div class="intro-text">
@@ -195,9 +211,16 @@
             </div>
           </div>
         </section>
+
+        <!--======================== INFOS    ----END----- ======================= -->
       </header>
 
-      <!-- NAVBAR  -->
+      <!--======================== HEADER   ----END----- ======================= -->
+
+      <!-- -------------------------------------------------------------------------------------------------------- -->
+
+      <!--======================== NAVBAR   ----START----- ======================= -->
+
       <nav class="navbar">
         <section class="row">
           <div class="logo">
@@ -214,100 +237,97 @@
           </ul>
         </section>
       </nav>
+      <!--======================== NAVBAR   ----END----- ======================= -->
+
+      <!-- ------------------------------------------------------------------------------------------------- -->
+
+      <!--======================== MAIN   ----START----- ======================= -->
 
       <main class="root">
         <article class="content">
+          <!--======================== SOBRE   ----START----- ======================= -->
+
+          <section class="sobre">
+            <article class="row">
+              <div class="header">
+                <h1>Sobre nós</h1>
+                <div class="line"></div>
+                <p>
+                  At Creative Brand Consulting, we are brand builders – experts
+                  in big thinking, creative ideas and fresh technology
+                  solutions.
+                </p>
+              </div>
+              <ul class="cards">
+                <li>
+                  <img src="./assets/icons/computer.svg" alt="computer" />
+                  <div class="card-body">
+                    <h2>Brand Development</h2>
+                    <p>
+                      Sample text. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit nullam nunc justo sagittis suscipit
+                      ultrices.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <img src="./assets/icons/computer.svg" alt="computer" />
+                  <div class="card-body">
+                    <h2>Brand Development</h2>
+                    <p>
+                      Sample text. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit nullam nunc justo sagittis suscipit
+                      ultrices.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <img src="./assets/icons/computer.svg" alt="computer" />
+                  <div class="card-body">
+                    <h2>Brand Development</h2>
+                    <p>
+                      Sample text. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit nullam nunc justo sagittis suscipit
+                      ultrices.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+          </section>
+
+          <!--======================== SOBRE   ----END----- ======================= -->
+
           <section class="cursos">
             <div class="row">
               <div class="cursos-titles">
-                <h1>✏️</h1>
+                <h2>✏️</h2>
                 <h1>Cursos</h1>
                 <p>
-                  Métodos que te ensinam do zero ao avançado tudo que você tem
-                  que saber.
+                  Métodos que te ensinam do básico ao avançado tudo que você
+                  precisa saber.
                 </p>
               </div>
-              <!-- Carrossel cursos  -->
 
               <div class="mb"></div>
             </div>
           </section>
-          <section>
-            <div class="wrapper">
-              <section id="section1">
-                <a href="#section3">‹</a>
-                <div class="item">
-                  <img src="" alt="curso word" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
+          <!--======================== SLIDES  ----START----- ======================= -->
 
-                <a href="#section2" class="left">›</a>
-              </section>
-              <section id="section2">
-                <a href="#section1">‹</a>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-
-                <a href="#section3" class="left">›</a>
-              </section>
-
-              <section id="section3">
-                <a href="#section2">‹</a>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-
-                <a href="#section4" class="left">›</a>
-              </section>
-
-              <section id="section4">
-                <a href="#section3">‹</a>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <a href="#section1" class="left">›</a>
-              </section>
+          <section class="slide-cursos">
+            <div id="secondary-slider" class="splide">
+              <div class="splide__track">
+                <ul class="splide__list"></ul>
+              </div>
             </div>
           </section>
+
+          <!--======================== SLIDES   ----END----- ======================= -->
         </article>
       </main>
+      <!--======================== MAIN   ----END----- ======================= -->
 
       <footer class="foot">
         <section class="row">

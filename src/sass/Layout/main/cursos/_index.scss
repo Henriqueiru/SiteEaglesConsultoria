@@ -1,65 +1,35 @@
-@import "./carrousel";
+@import './carrousel';
 
 .cursos {
   width: 100%;
+  padding: 1em 2em;
 
-  position: relative;
-  z-index: 1;
-
-  img {
-    width: 100%;
-  }
-
-  padding-top: 10vh;
-
-  @media (max-width: 900px) {
-    padding: 1vh 0;
-  }
+  @media(max-width:789px) {}
 
   .row {
-    background-color: transparent;
     width: 100%;
-    margin: 0vh auto;
-    position: relative;
-    display: block;
-    @import "./mobile";
+    max-width: 60rem;
+    margin: 0 auto;
 
     .cursos-titles {
-      width: 90%;
-      max-width: 550px;
-      margin: 0 auto;
-      padding: 10vh 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
       h1 {
-        text-align: center;
-        font-size: 56px;
-        font-weight: 300;
-        color: #202020;
+        font-size: 4em;
         line-height: 2em;
-
-        @media only screen and(max-width: 900px) {
-          font-size: 32px;
-        }
+        font-weight: 700;
       }
 
       p {
+        margin: 1em 0 0 0;
         text-align: center;
 
-
-        font-size: 28px;
-        font-weight: 300;
-        color: #220000;
-        width: 90%;
-        max-width: 550px;
-
-        line-height: 1.2em;
-        margin: 1em auto 0 auto;
-
-        @media only screen and(max-width: 900px) {
-          font-size: 18px;
-          margin-top: 1em;
-          line-height: 1;
-        }
+        color: #202020;
+        font-size: 1.2em;
       }
     }
   }
