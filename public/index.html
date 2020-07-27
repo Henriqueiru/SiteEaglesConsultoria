@@ -49,277 +49,316 @@
       media="screen"
       href="../src/sass/index.scss?v=8may2013"
     />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@splidejs/splide/dist/css/splide.min.css"
+    />
   </head>
   <body id="css-zen-garden">
     <!-- header page  -->
-    <header>
-      <div class="animation">
-        <div
-          class="box"
-          style="
-            background-image: url(./assets/img/animation/illustrator.svg);
-            background-size: cover;
-          "
-        ></div>
-        <div
-          class="box"
-          style="
-            background-image: url(./assets/img/animation/excel.svg);
-            background-size: cover;
-          "
-        ></div>
-        <div
-          class="box"
-          style="
-            background-image: url(./assets/img/animation/ingles.png);
-            background-size: cover;
-            width: 300px;
-          "
-        ></div>
-        <div
-          class="box"
-          style="
-            background-image: url(./assets/img/animation/chrome.svg);
-            background-size: cover;
-          "
-        ></div>
-        <div
-          class="box"
-          style="
-            background-image: url(./assets/img/animation/photoshop.svg);
-            background-size: cover;
-          "
-        ></div>
+    <div class="scrolling-page">
+      <!--======================== HEADER   ----START----- ======================= -->
+      <header class="animated" style="overflow: hidden;">
+        <!--======================== ANIMATION CARDS CURSOS   ----START----- ======================= -->
+        <div class="animation">
+          <div
+            class="box"
+            style="
+              background-image: url(./assets/img/animation/illustrator.svg);
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="box"
+            style="
+              background-image: url(./assets/img/animation/excel.svg);
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="box"
+            style="
+              background-image: url(./assets/img/animation/ingles.png);
+              background-size: cover;
+              width: 300px;
+            "
+          ></div>
+          <div
+            class="box"
+            style="
+              background-image: url(./assets/img/animation/chrome.svg);
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="box"
+            style="
+              background-image: url(./assets/img/animation/photoshop.svg);
+              background-size: cover;
+            "
+          ></div>
 
-        <div
-          class="box"
-          style="
-            background-image: url(./assets/img/animation/power.svg);
-            background-size: cover;
-          "
-        ></div>
+          <div
+            class="box"
+            style="
+              background-image: url(./assets/img/animation/power.svg);
+              background-size: cover;
+            "
+          ></div>
 
-        <div
-          class="box"
-          style="
-            background-image: url(./assets/img/animation/windows10.svg);
-            background-size: cover;
-          "
-        ></div>
-        <div
-          class="box"
-          style="
-            background-image: url(./assets/img/animation/word.svg);
-            background-size: cover;
-          "
-        ></div>
-        <div
-          class="box"
-          style="
-            background-image: url(./assets/img/animation/illustrator.svg);
-            background-size: cover;
-          "
-        ></div>
-        <div
-          class="box"
-          style="
-            background-image: url(./assets/img/animation/excel.svg);
-            background-size: cover;
-          "
-        ></div>
-      </div>
-      <img class="big-circle" src="./assets/img/big-eclipse.svg" alt="fundo1" />
-      <img class="big-circle" src="./assets/img/big-eclipse.svg" alt="fundo1" />
-      <img
-        class="medium-circle"
-        src="./assets/img/mid-eclipse.svg"
-        alt="fundo2"
-      />
-      <img
-        class="small-circle"
-        src="./assets/img/small-eclipse.svg"
-        alt="fundo3"
-      />
-      <section class="presentation row">
-        <div class="introduction">
-          <div class="intro-text">
-            <h1 class="title-wrapper">
-              <div class="box b1">Seja bem Vindo a</div>
-              <div class="box b2">Eagles Consultoria</div>
-            </h1>
-            <p>
-              Aprenda Pacote Office completo, Excel avançado, Word, PowerPoint,
-              Redes Sociais, Windows 10, Chrome, Inglês, Música e muito mais.
-              Aulas Atualizadas online ou presenciais. Basta se cadastrar em uma
-              de nossas aulas e aprimorar seus conhecimentos!
-            </p>
-          </div>
-          <div class="cta">
-            <button class="cta-select">Registrar</button>
-            <button class="cta-add">Já Sou Aluno</button>
-          </div>
+          <div
+            class="box"
+            style="
+              background-image: url(./assets/img/animation/windows10.svg);
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="box"
+            style="
+              background-image: url(./assets/img/animation/word.svg);
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="box"
+            style="
+              background-image: url(./assets/img/animation/illustrator.svg);
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="box"
+            style="
+              background-image: url(./assets/img/animation/excel.svg);
+              background-size: cover;
+            "
+          ></div>
         </div>
 
-        <div class="glide">
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              <li class="glide__slide">
-                <img src="./assets/img/excelnovo.png" alt="image1" />
-              </li>
-              <li class="glide__slide">
-                <img src="./assets/img/newphotoshop.png" alt="image2" />
-              </li>
-              <li class="glide__slide">
-                <img src="./assets/img/NoteExample2.0.png" alt="image3" />
-              </li>
-            </ul>
-            <div class="glide__bullets" data-glide-el="controls[nav]">
-              <button
-                class="glide__bullet js-tilt"
-                data-glide-dir="=0"
-              ></button>
-              <button
-                class="glide__bullet js-tilt"
-                data-glide-dir="=1"
-              ></button>
-              <button
-                class="glide__bullet js-tilt"
-                data-glide-dir="=2"
-              ></button>
+        <!--======================== ANIMATION CARDS CURSOS   ----END----- ======================= -->
+
+        <!--======================== VECTORIES CIRCLES   ----START----- ======================= -->
+
+        <img
+          class="big-circle"
+          src="./assets/img/big-eclipse.svg"
+          alt="fundo1"
+        />
+
+        <img
+          class="medium-circle"
+          src="./assets/img/mid-eclipse.svg"
+          alt="fundo2"
+        />
+        <img
+          class="small-circle"
+          src="./assets/img/small-eclipse.svg"
+          alt="fundo3"
+        />
+
+        <!--======================== VECTORIES    ----END----- ======================= -->
+
+        <!--======================== INFOS    ----START----- ======================= -->
+
+        <section class="presentation row">
+          <div class="introduction">
+            <div class="intro-text">
+              <h1 class="title-wrapper">
+                <div class="box b1">Olá</div>
+                <div class="box b2"></div>
+              </h1>
+              <p>
+                Aprenda Pacote Office completo, Excel avançado, Word,
+                PowerPoint, Redes Sociais, Windows 10, Chrome, Inglês, Música e
+                muito mais. Aulas Atualizadas online ou presenciais.
+              </p>
+            </div>
+            <div class="cta">
+              <a href="./cadastro.html" class="cta-add">Registrar</a>
+
+              <a href="./Login.html" class="cta-add"> Ja sou aluno</a>
             </div>
           </div>
-        </div>
-      </section>
-    </header>
 
-    <!-- NAVBAR  -->
-    <nav class="navbar">
-      <section class="row">
-        <div class="device">
-          <div class="logo">
-            <img src="./assets/navbarlogo.png" alt="logo" />
-            <span
-              ><span class="firt">EAGLES</span>
-              <span class="second">Consultoria</span></span
-            >
-          </div>
-          <ul icon-menu>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-        <div class="logo">
-          <img src="./assets/navbarlogo.png" alt="logo" />
-          <span
-            ><span class="firt">EAGLES</span>
-            <span class="second">Consultoria</span></span
-          >
-        </div>
-        <ul class="desktop">
-          <li>
-            <a href="./Login.html" class="a-hover" title="Login">
-              <span><ion-icon name="enter"></ion-icon></span>
-
-              <span>Log in</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-    </nav>
-
-    <main class="root">
-      <article class="content">
-        <section class="cursos">
-          <div class="row">
-            <div class="cursos-titles">
-              <h1>✏️</h1>
-              <h1>Cursos</h1>
-              <p>Métodos que ensina do zero ao avançado</p>
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <img src="./assets/img/excelnovo.png" alt="image1" />
+                </li>
+                <li class="glide__slide">
+                  <img src="./assets/img/newphotoshop.png" alt="image2" />
+                </li>
+                <li class="glide__slide">
+                  <img src="./assets/img/NoteExample2.0.png" alt="image3" />
+                </li>
+              </ul>
+              <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button
+                  class="glide__bullet js-tilt"
+                  data-glide-dir="=0"
+                ></button>
+                <button
+                  class="glide__bullet js-tilt"
+                  data-glide-dir="=1"
+                ></button>
+                <button
+                  class="glide__bullet js-tilt"
+                  data-glide-dir="=2"
+                ></button>
+              </div>
             </div>
-            <!-- Carrossel cursos  -->
-            <div class="wrapper">
-              <section id="section1">
-                <a href="#section3">‹</a>
-                <div class="item">
-                  <img src="" alt="curso word" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <a href="#section2" class="left">›</a>
-              </section>
-              <section id="section2">
-                <a href="#section1">‹</a>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <a href="#section3" class="left">›</a>
-              </section>
-
-              <section id="section3">
-                <a href="#section2">‹</a>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <div class="item">
-                  <img src="" />
-                </div>
-                <a href="#section1" class="left">›</a>
-              </section>
-            </div>
-
-            <div class="mb"></div>
           </div>
         </section>
-      </article>
-    </main>
 
-    <footer>
-      <section class="row">
-        <div class="copyright">
-          <h4>&copy; template 2020 || create for Henrique</h4>
-        </div>
-        <div class="logo">
-          <img src="./assets/navbarlogo.png" alt="logo" />
-        </div>
-        <ul class="msl">
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-        </ul>
-      </section>
-    </footer>
+        <!--======================== INFOS    ----END----- ======================= -->
+      </header>
+
+      <!--======================== HEADER   ----END----- ======================= -->
+
+      <!-- -------------------------------------------------------------------------------------------------------- -->
+
+      <!--======================== NAVBAR   ----START----- ======================= -->
+
+      <nav class="navbar">
+        <section class="row">
+          <div class="logo">
+            <img src="./assets/img/logo/logo200low.png" alt="logo" />
+          </div>
+          <ul class="desktop">
+            <li>
+              <a href="./Login.html" class="a-hover" title="Login">
+                <span><ion-icon name="enter"></ion-icon></span>
+
+                <span>Log in</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+      <!--======================== NAVBAR   ----END----- ======================= -->
+
+      <!-- ------------------------------------------------------------------------------------------------- -->
+
+      <!--======================== MAIN   ----START----- ======================= -->
+
+      <main class="root">
+        <article class="content">
+          <!--======================== SOBRE   ----START----- ======================= -->
+
+          <section class="sobre">
+            <article class="row">
+              <div class="header">
+                <h1>Sobre nós</h1>
+                <div class="line"></div>
+                <p>
+                  At Creative Brand Consulting, we are brand builders – experts
+                  in big thinking, creative ideas and fresh technology
+                  solutions.
+                </p>
+              </div>
+              <ul class="cards">
+                <li>
+                  <img src="./assets/icons/computer.svg" alt="computer" />
+                  <div class="card-body">
+                    <h2>Brand Development</h2>
+                    <p>
+                      Sample text. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit nullam nunc justo sagittis suscipit
+                      ultrices.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <img src="./assets/icons/computer.svg" alt="computer" />
+                  <div class="card-body">
+                    <h2>Brand Development</h2>
+                    <p>
+                      Sample text. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit nullam nunc justo sagittis suscipit
+                      ultrices.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <img src="./assets/icons/computer.svg" alt="computer" />
+                  <div class="card-body">
+                    <h2>Brand Development</h2>
+                    <p>
+                      Sample text. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit nullam nunc justo sagittis suscipit
+                      ultrices.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+          </section>
+
+          <!--======================== SOBRE   ----END----- ======================= -->
+
+          <section class="cursos">
+            <div class="row">
+              <div class="cursos-titles">
+                <h2>✏️</h2>
+                <h1>Cursos</h1>
+                <p>
+                  Métodos que te ensinam do básico ao avançado tudo que você
+                  precisa saber.
+                </p>
+              </div>
+
+              <div class="mb"></div>
+            </div>
+          </section>
+          <!--======================== SLIDES  ----START----- ======================= -->
+
+          <section class="slide-cursos">
+            <div id="secondary-slider" class="splide">
+              <div class="splide__track">
+                <ul class="splide__list"></ul>
+              </div>
+            </div>
+          </section>
+
+          <!--======================== SLIDES   ----END----- ======================= -->
+        </article>
+      </main>
+      <!--======================== MAIN   ----END----- ======================= -->
+
+      <footer class="foot">
+        <section class="row">
+          <div class="logo">
+            <img src="./assets/img/logo/logo500big.png" alt="logo" />
+          </div>
+          <div class="col-top">
+            <p>
+              copyright 2020 <a href="">Eagles Consultoria</a> | site design
+              handcrafted by
+              <a href="/">Henrique</a>
+            </p>
+          </div>
+          <div class="col-button">
+            <div class="icons">
+              <a href="/"
+                ><img
+                  src="./assets/icons/facebook.svg"
+                  alt="facebook media social"
+              /></a>
+
+              <a href="/"
+                ><img
+                  src="./assets/icons/whatsapp.svg"
+                  alt="whats app media social"
+              /></a>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
     <script src="../src/index.js"></script>
 
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>

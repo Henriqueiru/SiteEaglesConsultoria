@@ -1,35 +1,53 @@
 .logo {
-    flex-direction: row;
-    display: flex;
-    justify-content: flex-start;
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+
+  width: 90%;
+  max-width: 300px;
+
+  @media only screen and(max-width:1200px) {
+    justify-content: center;
+    width: 100%;
     align-items: center;
-    height: 100%;
+    max-width: 100%;
+    position: relative;
+    left: 50%;
+    margin-top: 4em;
 
-    width: 90%;
-    max-width: 300px;
+    transform: translateX(-50%);
+  }
 
-    @media (max-width: 900px) {
-        display: none;
+  @media only screen and(max-width:900px) {
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    max-width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  span {
+    font-weight: 600;
+
+    .firt {
+      color: $First;
+      @import "./animationLogo";
+      @include LetterOne;
     }
 
-    span {
-        font-weight: 600;
-
-        .firt {
-            color: $First;
-            @import "./animationLogo";
-            @include LetterOne;
-        }
-
-        .second {
-            color: $Second;
-            @import "./animationLogo";
-            @include LetterTwo;
-        }
+    .second {
+      color: $Second;
+      @import "./animationLogo";
+      @include LetterTwo;
     }
+  }
 
-    img {
-        width: 40px;
-        margin-right: 1vw;
-    }
+  img {
+    width: 200px;
+    margin-right: 1vw;
+  }
 }

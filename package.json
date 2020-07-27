@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel public/index.html --out-dir development -p 3000 ",
+    "dev": "parcel public/index.html --out-dir development -p 3000 ",
     "build": "parcel build public/index.html --out-dir dist --public-url ./"
   },
   "keywords": [],
@@ -21,6 +21,8 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
+    "@splidejs/splide": "^2.4.9",
+    "gsap": "^3.4.0",
     "rellax": "^1.12.1",
     "swiper": "^6.0.0"
   }

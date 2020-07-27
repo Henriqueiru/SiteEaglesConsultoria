@@ -1,22 +1,24 @@
 .row {
-    width: 95%;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    background: transparent;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
 
-    //  CONFIG ROW 
-    @media (max-width: 900px) {
-        width: 100%;
+  //  CONFIG ROW
 
-    }
-
-    @import "./mobile";
-
-    @import './logo';
-    @import './desktop/desktop';
-
-
+  @media only screen and (min-width: 900px) {
+    padding-top: 7em;
+    justify-content: baseline;
+  }
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  @import "./logo";
+  @import "./desktop/desktop";
+  @import "./desktop/li";
 }

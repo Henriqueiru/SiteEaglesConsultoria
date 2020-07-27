@@ -12,16 +12,17 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  overflow: hidden;
+
+  z-index: 1000;
 
   @media only screen and(max-width: 1200px) {
     overflow: initial;
     height: 100%;
     padding: 1vh 0;
     margin-top: 50px;
-
   }
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     height: 80%;
@@ -64,32 +65,31 @@ header {
       display: none;
     }
 =======
+=======
+>>>>>>> 1d1b12401d5014958bb7e283feb3ac46aba77063
   @media only screen and(max-width: 992px) {
     overflow: initial;
     height: 100%;
     padding: 1vh 0;
-    margin-top: 60px;
-
-
   }
 
   @media only screen and(max-width: 768px) {
     overflow: initial;
     height: 100%;
     padding: 1vh 0;
-    margin-top: 60px;
-
-
   }
 
   @media only screen and(max-width: 575px) {
     overflow: initial;
     height: 100%;
     padding: 1vh 0;
+<<<<<<< HEAD
     margin-top: 60px;
 
 
 >>>>>>> 95a271c9fd806e5c00f7e2fffb9c52ca15c6996a
+=======
+>>>>>>> 1d1b12401d5014958bb7e283feb3ac46aba77063
   }
 
   @media only screen and(max-width: 411px) {
@@ -277,31 +277,28 @@ header {
     }
 =======
     padding: 1vh 0;
-    margin-top: 60px;
-
-
   }
 
   @media only screen and(max-width: 375px) {
     overflow: initial;
     height: 100%;
     padding-top: 32px;
+<<<<<<< HEAD
     margin-top: 60px;
 
 
 >>>>>>> 95a271c9fd806e5c00f7e2fffb9c52ca15c6996a
+=======
+>>>>>>> 1d1b12401d5014958bb7e283feb3ac46aba77063
   }
 
   @media only screen and(max-width: 320px) {
     overflow: initial;
     height: 100%;
     padding: 1vh 0;
-    margin-top: 60px;
-
-
   }
 
-  @import './animation';
-  @import './circles';
-  @import './row';
+  @import "./animation";
+  @import "./circles";
+  @import "./row";
 }

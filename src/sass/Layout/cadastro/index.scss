@@ -1,0 +1,99 @@
+@import "../../utils/reboot";
+@import "./form";
+
+body {
+  background: #dcdce6 !important;
+  font-family: $Geral;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and(max-width:786px) {
+    padding: 2em 0;
+    height: 100%;
+
+  }
+
+  .row {
+    width: 100%;
+    padding: 96px;
+
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and(max-width:786px) {
+      padding: 10px;
+      height: 100%;
+
+    }
+
+    header {
+      width: 90%;
+      max-width: 380px;
+
+      @media only screen and(max-width:786px) {
+        text-align: center;
+        margin: 0 auto;
+
+      }
+
+      img {
+        width: 300px;
+        max-width: 0 auto;
+
+
+      }
+
+      h1 {
+        margin: 64px 0 32px;
+        font-size: 52px;
+        font-weight: 300;
+        color: #0f0f0fb2;
+        font-weight: 700;
+
+        @media only screen and(max-width:786px) {
+          margin: 32px 0 32px;
+        }
+
+
+      }
+
+      p {
+        font-size: 18px;
+        color: #737380;
+        line-height: 32px;
+      }
+    }
+
+    .form {
+      form {
+        width: 100%;
+        max-width: 450px;
+
+        .input-group {
+          display: flex;
+
+          input+input {
+            margin-left: 8px;
+          }
+        }
+
+
+      }
+
+      input {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

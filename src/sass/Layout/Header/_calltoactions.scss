@@ -3,6 +3,20 @@
 .cta {
   width: 100%;
   margin-top: -40px;
+
+  @media only screen and (max-width: 1200px) {
+    // UP TO SCREEN 900
+    width: 100%;
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    // MARGIN AND PADDING
+    padding: 0vh 0;
+    margin-top: 32px;
+  }
+
   @media only screen and (max-width: 768px) {
     // UP TO SCREEN 900
     width: 100%;
@@ -15,6 +29,7 @@
     padding: 0vh 0;
     margin-top: 32px;
   }
+
   @media only screen and (max-width: 575px) {
     // UP TO SCREEN 900
     width: 100%;
@@ -41,15 +56,62 @@
     margin-top: 18px;
   }
 
-  button {
+  a {
     // GLOBAL CONFIGURATION --- btn
     border-radius: 3px;
     width: 90%;
-    max-width: 150px;
+    padding: 0.8rem 2rem;
     height: 50px;
+
+    // MOBILE ALIGN ITEMS TEXT
+    @media only screen and(max-width:1200px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.8rem 0.5rm;
+    }
+
+    @media only screen and(max-width:1024px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.8rem 1rem;
+      width: 30%;
+    }
+
+    @media only screen and(max-width:800px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media only screen and(max-width:768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media only screen and(max-width:576px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     // MARGIN AND PADDING
-    margin: 0.5vh 0em;
+
     margin-right: 1em;
+    transform: translateY(0);
+    outline: 0;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.479);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
 
     @media (max-width: 900px) {
       // UP TO SCREEN 900  ---  BTN ON THE CENTER
@@ -60,23 +122,23 @@
 
     @media only screen and (max-width: 320px) {
       // UP TO SCREEN 900
-      padding: 0vh 0;
+      padding: 0vh 0em;
       margin: 0 0.5em;
-      font-size: 16px;
+      font-size: 14px;
     }
 
     // REGISTER  --- btn
     &:nth-child(1) {
-      color: $Hover;
+      color: $Second;
       background: transparent;
-      border: 2px solid $Hover;
+      border: 2px solid $Second;
       transition: 0.2s;
     }
 
     // I AM A STUDENT --- btn
     &:nth-child(2) {
       border: none;
-      background-color: $Hover;
+      background-color: $Second;
       color: white;
       transition: 0.2s;
     }

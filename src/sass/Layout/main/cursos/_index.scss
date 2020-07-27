@@ -1,9 +1,10 @@
-$itemGrow: 1.2;
-$duration: 250ms;
+@import './carrousel';
 
 .cursos {
   width: 100%;
+  padding: 1em 2em;
 
+<<<<<<< HEAD
   position: relative;
 
   img {
@@ -16,10 +17,13 @@ $duration: 250ms;
   @media (max-width: 900px) {
     padding: 1vh 0;
   }
+=======
+  @media(max-width:789px) {}
+>>>>>>> 1d1b12401d5014958bb7e283feb3ac46aba77063
 
   .row {
-    background-color: transparent;
     width: 100%;
+<<<<<<< HEAD
     margin: 0vh auto;
     position: relative;
     display: block;
@@ -28,39 +32,33 @@ $duration: 250ms;
 =======
 >>>>>>> 95a271c9fd806e5c00f7e2fffb9c52ca15c6996a
     @import "./mobile";
+=======
+    max-width: 60rem;
+    margin: 0 auto;
+>>>>>>> 1d1b12401d5014958bb7e283feb3ac46aba77063
 
     .cursos-titles {
-      width: 90%;
-      max-width: 550px;
-      margin: 0 auto;
-      padding: 10vh 0;
-
-      @media (max-width: 900px) {
-      }
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
       h1 {
-        text-align: center;
-        font-size: 56px;
-        font-weight: 300;
-        color: #eeee;
+        font-size: 4em;
+        line-height: 2em;
+        font-weight: 700;
       }
 
       p {
+        margin: 1em 0 0 0;
         text-align: center;
-        color: #eeee;
 
-        font-size: 28px;
-        font-weight: 300;
-
-        width: 90%;
-        max-width: 550px;
-        margin: 0px auto;
-
-        @media (max-width: 900px) {
-          font-size: calc(24px + (4 / 900) * 100 * 1vmax);
-        }
+        color: #202020;
+        font-size: 1.2em;
       }
     }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     .wrapper {
@@ -182,5 +180,7 @@ $duration: 250ms;
 =======
     @import "./carrousel";
 >>>>>>> 95a271c9fd806e5c00f7e2fffb9c52ca15c6996a
+=======
+>>>>>>> 1d1b12401d5014958bb7e283feb3ac46aba77063
   }
 }
