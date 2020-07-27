@@ -27,24 +27,6 @@ gsap.to(".b2", {
   opacity: 1,
   text: "Eagles Consultoria",
   ease: Power3,
-  scrollTrigger: {
-    trigger: ".b2",
-    start: "bottom bottom",
-    end: "0",
-    scrub: true,
-  },
-});
-
-gsap.to(".intro-text", {
-  scrollTrigger: {
-    scrub: true,
-    trigger: ".intro-text",
-    // markers: true,
-    start: "top center",
-    end: "top 100px",
-  },
-  ease: "none",
-  opacity: 1,
 });
 
 // SLIDE CARROUSEL
@@ -71,4 +53,53 @@ document.addEventListener("DOMContentLoaded", function () {
     gap: 10,
     pagination: false,
   }).mount();
+});
+gsap.registerPlugin(ScrollTrigger);
+
+// component #1 animations
+let c1 = ScrollTrigger.matchMedia({
+  "(min-width: 900px)": () => {
+    let c1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".animated",
+        scrub: 0.2,
+        start: "top top",
+        end: "100%",
+      },
+    });
+    c1.fromTo(
+      ".animated .row",
+
+      { opacity: 1, y: 0, autoAlpha: 1 },
+      { opacity: 0, y: 50, autoAlpha: 0, duration: 1 }
+    );
+
+    let c2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".content",
+        scrub: 0.2,
+        start: "-50%",
+        end: "10%",
+      },
+    });
+    c2.fromTo(
+      ".content .sobre",
+      { opacity: 0, y: 100 },
+      { opacity: 1, y: 0, duration: 1 }
+    );
+
+    let c3 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".splide__list",
+        scrub: 0.2,
+        start: "-100%",
+        end: "5%",
+      },
+    });
+    c3.fromTo(
+      ".splide__list li",
+      { opacity: 0, y: 10, duration: 1 },
+      { opacity: 1, y: 0, duration: 1 }
+    );
+  },
 });

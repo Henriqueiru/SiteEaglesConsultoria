@@ -31,9 +31,9 @@
     <meta name="rating" content="general" />
     <meta name="robots" content="noimageindex, noarchive" />
     <!-- <meta name="robots" content="index,follow" /> -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#dcdce6" />
     <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#dcdce6" />
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -53,12 +53,16 @@
       rel="stylesheet"
       href="../node_modules/@splidejs/splide/dist/css/splide.min.css"
     />
+
+    <!-- for on scroll animations -->
+    <link rel="stylesheet" href="../src/libs/animate.css" />
+    <script src="../src/libs/wow.min.js"></script>
   </head>
   <body id="css-zen-garden">
     <!-- header page  -->
     <div class="scrolling-page">
       <!--======================== HEADER   ----START----- ======================= -->
-      <header class="animated" style="overflow: hidden;">
+      <header class="animated wow fadeInUp" style="overflow: hidden;">
         <!--======================== ANIMATION CARDS CURSOS   ----START----- ======================= -->
         <div class="animation">
           <div
@@ -163,7 +167,7 @@
 
         <section class="presentation row">
           <div class="introduction">
-            <div class="intro-text">
+            <div class="intro-text component-1">
               <h1 class="title-wrapper">
                 <div class="box b1">Olá</div>
                 <div class="box b2"></div>
@@ -304,7 +308,6 @@
           <section class="cursos">
             <div class="row">
               <div class="cursos-titles">
-                <h1>✏️</h1>
                 <h1>Cursos e Módulos</h1>
               </div>
 
@@ -356,8 +359,12 @@
         </section>
       </footer>
     </div>
+
     <script src="../src/index.js"></script>
 
+    <script>
+      new WOW().init();
+    </script>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   </body>
 </html>

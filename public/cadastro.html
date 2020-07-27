@@ -3,7 +3,7 @@
   <head>
     <title>Eagles Consultoria</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="height=device-height, initial-scale=1" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Cache-Control" content="no-cache" />
     <meta http-equiv="content-language" content="pt-br, en-US, fr" />
@@ -39,9 +39,12 @@
     <link rel="shortcut icon" href="/assets/logo192.png" type="image/x-icon" />
   </head>
   <body>
+    <div class="after" role="banner">
+      <img src="./assets/vectores/ilu1.jpg" alt="Eagles Consultoria" />
+    </div>
     <main class="container">
       <section class="row">
-        <header class="header">
+        <header class="header right">
           <img
             src="../public/assets/img/logo/logo300low.png"
             alt="Eagles Consultoria"
@@ -51,40 +54,52 @@
             Faça seu cadastro para ter acesso, a plataforma e ajuda as pessoas
             encontar casos da sua ong
           </p>
+
+          <a class="back-link" href="./index.html">
+            <span>
+              <img src="./assets/img/icon/log-in.svg" alt="icon Login"
+            /></span>
+            <p>Voltar</p>
+          </a>
         </header>
         <article class="form">
-          <form>
+          <form class="inputs">
             <p class="aviso"></p>
-            <input type="text" placeholder="Nome da ONG" />
-            <input type="email" placeholder="E-mail" />
-            <input type="senha" placeholder="senha" />
-            <input placeholder="WhatsApp" />
+            <input type="text" class="input" placeholder="Nome" />
+            <input type="email" class="input" placeholder="E-mail" />
+            <input type="senha" class="input" placeholder="senha" />
+            <input class="input" placeholder="WhatsApp" />
             <div class="input-group">
-              <input placeholder="Cidade" />
-
-              <input placeholder="UF" />
+              <select class="input" name="uf">
+                <option value="">Selecione o Estado</option>
+              </select>
+              <select class="input" name="city" disabled>
+                <option value="">Selecione o Cidade</option>
+              </select>
             </div>
-            <button class="button">Cadastrar</button>
+            <button class="button input">Cadastrar</button>
           </form>
         </article>
       </section>
     </main>
 
-    <script src="../src/login.js"></script>
+    <script src="../src/cadastro.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script>
       TweenMax.from(".right", 1.6, {
         delay: 2,
-        left: 0,
-        opacity: 0,
+
+        marginLeft: -100,
+        opacity: 1,
       });
       TweenMax.to(".right", 3, {
         delay: 2,
         left: 1,
         opacity: 1,
+        marginLeft: -0,
       });
-      TweenMax.from(".product img", 2, {
+      TweenMax.from(".inputs .input", 2, {
         delay: 3,
         // opacity: 0,
         // y: 0,
@@ -92,11 +107,54 @@
         ease: Expo.easeInOut,
       });
 
-      TweenMax.to(".product img", 2, {
+      TweenMax.to(".inputs .input", 2, {
         delay: 3,
+
         // opacity: 1,
         // y: 20,
+        stagger: 0.1,
+        duration: 0.1,
         scale: 1,
+        ease: Expo.easeInOut,
+      });
+
+      // container
+
+      TweenMax.from(".after", 2, {
+        delay: 0,
+        // opacity: 0,
+        // y: 0,
+        height: "100vh",
+
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.to(".after", 3, {
+        delay: 2,
+        height: 0,
+        // opacity: 1,
+        // y: 20,
+
+        ease: Expo.easeInOut,
+      });
+
+      // img
+
+      TweenMax.from(".after img", 2, {
+        delay: 0,
+        // opacity: 0,
+        // y: 0,
+        height: "100vh",
+
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.to(".after img", 3, {
+        delay: 2,
+        height: 0,
+        // opacity: 1,
+        // y: 20,
+
         ease: Expo.easeInOut,
       });
     </script>

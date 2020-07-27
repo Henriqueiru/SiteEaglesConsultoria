@@ -1,5 +1,6 @@
 .slide-cursos {
   padding: 2em 0;
+  background: $Second;
 
   .splide {
     .splide__track {
@@ -15,7 +16,7 @@
 
           @media (min-width: 768px) {
             &:hover {
-              transform: scale(1.1, 1.1);
+              transform: scale(1.4, 1.4);
               box-shadow: 0px 0px 10px #ff85f5;
               z-index: 1068 !important;
             }
