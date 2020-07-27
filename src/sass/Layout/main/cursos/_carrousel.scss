@@ -11,12 +11,12 @@
         .splide__slide {
           background: red;
 
-          transition: .6s;
+          transition: 0.6s;
 
-          @media (min-width:768px) {
+          @media (min-width: 768px) {
             &:hover {
               transform: scale(1.1, 1.1);
-              box-shadow: 0px 0px 10px #202020;
+              box-shadow: 0px 0px 10px #ff85f5;
               z-index: 1068 !important;
             }
           }
