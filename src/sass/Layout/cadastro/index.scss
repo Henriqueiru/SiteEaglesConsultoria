@@ -111,17 +111,26 @@ body {
     }
 
     .form {
+      margin-top: 4rem;
+
       form {
         width: 100%;
         max-width: 450px;
 
         .input-group {
           display: flex;
+          margin-top: 0.5em;
+
 
           input+input {
             margin-left: 8px;
+
           }
+
+
         }
+
+
 
 
 

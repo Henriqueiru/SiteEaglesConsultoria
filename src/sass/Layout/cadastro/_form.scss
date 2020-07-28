@@ -2,7 +2,7 @@ form input,
 select {
     width: 100%;
     text-transform: lowercase;
-    height: 60px;
+    height: 50px;
     color: rgb(0, 0, 0);
     background: #ffffff;
     border: 1px solid #ffffff;
@@ -25,7 +25,6 @@ select {
 form select {
     &:not(:nth-child(2)) {
         margin-right: 10px;
-
     }
 
     &:hover,
@@ -36,8 +35,6 @@ form select {
 
     option {
         text-transform: capitalize;
-
-
     }
 
     appearance: none;
@@ -54,8 +51,6 @@ form textarea {
     padding: 16px 24px;
     line-height: 24px;
 }
-
-
 
 .button {
     width: 100%;
@@ -79,8 +74,6 @@ form textarea {
 .button:hover {
     filter: brightness(90%);
 }
-
-
 
 .back-link {
     display: flex;
