@@ -3,20 +3,15 @@
   background: transparent;
   transition: position 1s;
   height: 72px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  background: transparent;
-=======
->>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
+
+
+
   position: fixed;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
   top: 0;
   left: 0;
   z-index: 1068;
-<<<<<<< HEAD
-=======
 
->>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
   .row {
     width: 95%;
     max-width: 1200px;
@@ -29,17 +24,6 @@
       width: 100%;
       background: #ffffffff;
     }
-<<<<<<< HEAD
-
-    @import "./mobile";
-
-    .desktop.on {
-      @media (max-width: 900px) {
-        transition: padding 0.5s;
-        height: auto;
-        z-index: 1068;
-        padding: 10vh 0;
-=======
 
     @import "./mobile";
 
@@ -77,7 +61,6 @@
       img {
         width: 40px;
         margin-right: 1vw;
->>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
       }
     }
 
@@ -98,25 +81,6 @@
       justify-content: space-evenly;
       align-items: center;
 
-<<<<<<< HEAD
-      @media (max-width: 900px) {
-        background: white;
-        display: flex;
-        overflow: hidden;
-        padding: 0vh 0;
-        flex-direction: column;
-        justify-content: flex-start !important;
-        align-items: center;
-        place-items: center;
-        position: absolute;
-        height: 0;
-        transition: padding 0.5s;
-        z-index: 1068;
-      }
-
-      @media (min-width: 900px) {
-        display: flex;
-=======
       width: 100%;
       height: 100%;
 
@@ -140,43 +104,11 @@
         background: rgb(255, 255, 255);
         transition: padding 0.5s;
         z-index: -1;
->>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
       }
 
       // BROWSER CONFIG NAV
       @media (min-width: 900px) {
         display: flex;
-<<<<<<< HEAD
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-
-        @media (max-width: 900px) {
-          display: none;
-        }
-
-        span {
-          font-weight: 600;
-
-          .firt {
-            color: $First;
-            @import "./animationLogo";
-            @include LetterOne;
-          }
-
-          .second {
-            color: $Second;
-            @import "./animationLogo";
-            @include LetterTwo;
-          }
-        }
-
-        img {
-          width: 40px;
-          margin-right: 1vw;
-        }
-=======
->>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
       }
 
       li {
@@ -227,34 +159,11 @@
               margin-top: -1vh;
             }
 
-<<<<<<< HEAD
-          @media (max-width: 900px) {
-            font-size: 1.5em;
-            position: relative;
-            font-weight: 600;
-
-            &::after {
-              content: "";
-              position: absolute;
-              left: 0;
-              right: 0;
-
-              z-index: 1068;
-
-              top: 1.3em;
-              height: 4px;
-
-              background: $Second;
-              animation: 0.5s effect cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            }
-          }
-=======
             [name="enter"] {
               @media (max-width: 900px) {
                 margin-right: 5vw;
               }
             }
->>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
 
             ion-icon {
               margin: 0;
@@ -325,17 +234,3 @@
     }
   }
 }
-=======
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1068;
-
-<<<<<<< HEAD
-  @import './row';
-}
->>>>>>> 95a271c9fd806e5c00f7e2fffb9c52ca15c6996a
-=======
-  @import "./row";
-}
->>>>>>> 1d1b12401d5014958bb7e283feb3ac46aba77063
