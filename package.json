@@ -22,8 +22,10 @@
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
     "@splidejs/splide": "^2.4.9",
+    "animate.css": "^4.1.0",
     "gsap": "^3.4.0",
     "rellax": "^1.12.1",
-    "swiper": "^6.0.0"
+    "swiper": "^6.0.0",
+    "wow.js": "^1.2.2"
   }
 }

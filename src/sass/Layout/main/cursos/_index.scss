@@ -3,6 +3,8 @@
 .cursos {
   width: 100%;
   padding: 1em 2em;
+  background: $Second;
+
 
 <<<<<<< HEAD
   position: relative;
@@ -43,11 +45,14 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      text-align: center;
 
       h1 {
         font-size: 4em;
-        line-height: 2em;
+        line-height: 1em;
         font-weight: 700;
+        margin-top: 1em;
+        color: #dcdce6;
       }
 
       p {

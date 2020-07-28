@@ -4,9 +4,31 @@
 body {
   background: #dcdce6 !important;
   font-family: $Geral;
+  color: $color1 !important;
 }
 
+.after {
+  content: "";
+  background: #dcdce6;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  height: 100%;
+  z-index: 1068;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+
 .container {
+
   width: 100%;
   max-width: 1120px;
   height: 100vh;
@@ -16,8 +38,11 @@ body {
   justify-content: center;
 
   @media only screen and(max-width:786px) {
-    padding: 2em 0;
+    padding: 2em 1em;
     height: 100%;
+
+    display: grid;
+    place-content: center;
 
   }
 
@@ -27,23 +52,33 @@ body {
 
     border-radius: 8px;
     display: flex;
-    flex-wrap: wrap;
+
     justify-content: space-between;
     align-items: center;
 
     @media only screen and(max-width:786px) {
-      padding: 10px;
+      padding: 0px;
+      margin: 0 auto;
+
+      justify-content: center;
       height: 100%;
+      flex-direction: column;
 
     }
 
     header {
-      width: 90%;
+      width: 100%;
       max-width: 380px;
+      position: relative;
+      text-align: center;
 
       @media only screen and(max-width:786px) {
         text-align: center;
-        margin: 0 auto;
+
+        padding: 0 0em;
+
+
+
 
       }
 
@@ -59,7 +94,7 @@ body {
         font-size: 52px;
         font-weight: 300;
         color: #0f0f0fb2;
-        font-weight: 700;
+
 
         @media only screen and(max-width:786px) {
           margin: 32px 0 32px;
@@ -89,11 +124,15 @@ body {
         }
 
 
+
       }
 
       input {
         margin-bottom: 8px;
       }
+
+
+
     }
   }
 }

@@ -1,4 +1,5 @@
-form input {
+form input,
+select {
     width: 100%;
     text-transform: lowercase;
     height: 60px;
@@ -9,10 +10,37 @@ form input {
     padding: 0 24px;
     outline: none;
 
+    &:hover,
+    &:focus {
+        border: 1px solid $Second;
+        cursor: pointer;
+    }
+
     &::placeholder {
         color: #646464;
         text-transform: capitalize;
     }
+}
+
+form select {
+    &:not(:nth-child(2)) {
+        margin-right: 10px;
+
+    }
+
+    &:hover,
+    &:focus {
+        border: 1px solid $Second;
+        cursor: pointer;
+    }
+
+    option {
+        text-transform: capitalize;
+
+
+    }
+
+    appearance: none;
 }
 
 form textarea {
@@ -27,6 +55,8 @@ form textarea {
     line-height: 24px;
 }
 
+
+
 .button {
     width: 100%;
     height: 60px;
@@ -34,7 +64,7 @@ form textarea {
     border: 0;
     border-radius: 8px;
     padding: 0 24px;
-    color: #fffbfbfb;
+    color: #dcdce6;
     font-weight: 700;
     margin-top: 16px;
 
@@ -48,4 +78,51 @@ form textarea {
 
 .button:hover {
     filter: brightness(90%);
+}
+
+
+
+.back-link {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    color: $Second;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 16px;
+    font-weight: 500;
+    transition: opacity 0.2s;
+
+    @media (max-width: 900px) {
+        margin-top: 8px;
+    }
+
+    span {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        margin-right: 16px;
+
+        img {
+            @media (max-width: 900px) {
+                display: flex !important;
+                width: 30px !important;
+            }
+
+            width: 20px !important;
+        }
+    }
+
+    p {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        color: $Second;
+        display: flex;
+    }
+}
+
+.back-link {
+    opacity: 0.8;
 }
