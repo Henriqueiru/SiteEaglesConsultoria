@@ -1,14 +1,5 @@
 header {
   position: relative;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  overflow: hidden;
-=======
-
->>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
-  margin-top: 72px;
-=======
->>>>>>> 95a271c9fd806e5c00f7e2fffb9c52ca15c6996a
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -22,51 +13,6 @@ header {
     margin-top: 50px;
   }
 
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-    height: 80%;
-<<<<<<< HEAD
-=======
-
->>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
-    @media (max-width: 900px) {
-      display: none;
-    }
-  }
-
-  .medium-circle {
-    position: absolute;
-    top: 30%;
-    right: 30%;
-    z-index: -1;
-    height: 60%;
-    opacity: 0.4;
-<<<<<<< HEAD
-=======
-
->>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
-    @media (max-width: 900px) {
-      display: none;
-    }
-  }
-
-  .small-circle {
-    position: absolute;
-    bottom: 0%;
-    left: 20%;
-<<<<<<< HEAD
-    z-index: -1;
-=======
-    z-index: 1;
-
->>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
-    @media (max-width: 900px) {
-      display: none;
-    }
-=======
-=======
->>>>>>> 1d1b12401d5014958bb7e283feb3ac46aba77063
   @media only screen and(max-width: 992px) {
     overflow: initial;
     height: 100%;
@@ -83,199 +29,11 @@ header {
     overflow: initial;
     height: 100%;
     padding: 1vh 0;
-<<<<<<< HEAD
-    margin-top: 60px;
-
-
->>>>>>> 95a271c9fd806e5c00f7e2fffb9c52ca15c6996a
-=======
->>>>>>> 1d1b12401d5014958bb7e283feb3ac46aba77063
   }
 
   @media only screen and(max-width: 411px) {
     overflow: initial;
     height: 100%;
-<<<<<<< HEAD
-    display: grid;
-    grid-template-columns: 590px 610px;
-    grid-template-rows: 100vh;
-    gap: 4ch;
-    transition: 0.1s;
-
-    @media (max-width: 900px) {
-      display: flex;
-      height: 100%;
-      flex-direction: column;
-    }
-
-    .introduction {
-      height: 100%;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-<<<<<<< HEAD
-      @media (max-width: 900px) {
-        min-height: 100%;
-      }
-      .intro-text {
-        padding: 10vh 0;
-        margin-top: 3em;
-=======
-
-      @media (max-width: 900px) {
-        min-height: 100%;
-      }
-
-      .intro-text {
-        padding: 10vh 0;
-        margin-top: 3em;
-
->>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
-        @media (max-width: 900px) {
-          text-align: center;
-          padding: 0;
-        }
-<<<<<<< HEAD
-=======
-
->>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
-        h1 {
-          font-size: 47px;
-          font-weight: 600;
-
-          flex: 1;
-<<<<<<< HEAD
-=======
-
->>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
-          @media (max-width: 900px) {
-            font-size: 24px;
-          }
-        }
-
-        p {
-          flex: 1;
-          font-size: 18px;
-<<<<<<< HEAD
-=======
-
->>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
-          @media (max-width: 900px) {
-            margin-top: 36px;
-            font-size: 16px;
-            font-weight: 300;
-          }
-        }
-
-        button {
-          border: none;
-        }
-      }
-
-      .cta {
-        @media (max-width: 900px) {
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          padding: 0vh 0;
-        }
-
-        button {
-          border-radius: 3px;
-          width: 90%;
-          width: 150px;
-          height: 50px;
-
-          margin: 2.5vh 1em;
-
-          &:nth-child(1) {
-            color: $Second;
-            background: transparent;
-            border: 2px solid $Second;
-            transition: 0.2s;
-
-            &:hover {
-              color: $First;
-              border: 2px solid $First;
-            }
-          }
-
-          &:nth-child(2) {
-            border: none;
-            background-color: $Second;
-            color: white;
-            transition: 0.2s;
-
-            &:hover {
-              border: none;
-              background-color: $First;
-              color: white;
-            }
-          }
-        }
-      }
-    }
-    .slider {
-      position: relative;
-      margin-top: 72px;
-      min-height: calc(100vh - 72px);
-<<<<<<< HEAD
-=======
-
->>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
-      @media (max-width: 900px) {
-        min-height: 50vh;
-        margin-top: 12px;
-      }
-<<<<<<< HEAD
-      filter: drop-shadow(0px 5px 3px black);
-      animation: drop 1.5s ease;
-=======
-
-      filter: drop-shadow(0px 5px 3px black);
-      animation: drop 1.5s ease;
-
->>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
-      @keyframes drop {
-        from {
-          opacity: 0;
-          transform: translateY(-80px);
-        }
-<<<<<<< HEAD
-=======
-
->>>>>>> 9b7b31455b13dccf9272ad9db828c31d053dc75c
-        to {
-          opacity: 1;
-          transform: translateY(0px);
-        }
-      }
-      .col-img.active {
-        opacity: 1;
-      }
-
-      .col-img {
-        transition: opacity 900ms;
-        display: flex;
-        opacity: 0;
-        position: absolute;
-        justify-content: center;
-
-        align-items: center;
-
-        img {
-          width: 100%;
-          max-width: 480px;
-
-          object-fit: cover;
-        }
-      }
-    }
-=======
     padding: 1vh 0;
   }
 
@@ -283,13 +41,6 @@ header {
     overflow: initial;
     height: 100%;
     padding-top: 32px;
-<<<<<<< HEAD
-    margin-top: 60px;
-
-
->>>>>>> 95a271c9fd806e5c00f7e2fffb9c52ca15c6996a
-=======
->>>>>>> 1d1b12401d5014958bb7e283feb3ac46aba77063
   }
 
   @media only screen and(max-width: 320px) {

@@ -31,16 +31,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#ffffff">
-
+    <link rel="stylesheet" href="/login.2899cc93.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="/logo192.95193346.png" type="image/x-icon">
-  <link rel="stylesheet" href="/login.60247f3e.css"></head>
+  <script src="/login.2899cc93.js"></script></head>
   <body>
     <div class="logon-container">
-      <section class="form">
-        <img src="/eaglelogologin.07d791bc.png" alt="Eagles Logo">
+      <section class="form right">
+        <img src="/logo500low.48b8964b.png" alt="Eagles Logo">
 
-        <form>
+        <form class="items">
           <h1>Faça seu Log In</h1>
           <input type="text" placeholder="Email">
           <input type="password" placeholder="senha">
@@ -49,16 +49,48 @@
             Entrar
           </button>
 
-          <a class="back-link" href="">
+          <a class="back-link" href="/cadastro.html">
             <span>
               <img src="/log-in.3ed118ce.svg" alt="icon Login"></span>
             <p>Não tenho cadastro</p>
           </a>
+          <a href="/" class="forgetpass">Esqueci minha senha</a>
         </form>
       </section>
-      <img class="backgrounimg" src="/noname.1d93ccf0.png" alt="eagles">
+
+      <div class="product" id="#product">
+        <img class="backgrounimg" src="/celular3.bcd80f56.png" alt="eagles">
+      </div>
     </div>
 
     <script src="/login.60247f3e.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script>TweenMax.from(".logon-container", 1, {
+  delay: 1,
+  opacity: 0,
+  scale: 1,
+  ease: Expo.easeInOut
+});
+TweenMax.from(".form", 2, {
+  delay: 1.6,
+  opacity: 0,
+  x: -30,
+  ease: Expo.easeInOut
+});
+TweenMax.from(".product img", 2, {
+  delay: 3,
+  // opacity: 0,
+  // y: 0,
+  scale: 0,
+  ease: Expo.easeInOut
+});
+TweenMax.to(".product img", 2, {
+  delay: 3,
+  // opacity: 1,
+  // y: 20,
+  scale: 1,
+  ease: Expo.easeInOut
+});</script>
   </body>
 </html>
