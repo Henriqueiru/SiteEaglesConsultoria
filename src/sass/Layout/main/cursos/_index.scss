@@ -1,12 +1,12 @@
-@import './carrousel';
+@import "./carrousel";
 
 .cursos {
   width: 100%;
   padding: 1em 2em;
-  background: $Second;
+  background: #202020;
 
-
-  @media(max-width:789px) {}
+  @media (max-width: 789px) {
+  }
 
   .row {
     width: 100%;

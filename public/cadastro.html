@@ -40,7 +40,7 @@
   </head>
   <body>
     <div class="after" role="banner">
-      <img src="./assets/vectores/ilu1.jpg" alt="Eagles Consultoria" />
+      <img src="./assets/vectores/gif2.gif" alt="Eagles Consultoria" />
     </div>
     <main class="container">
       <section class="row">
@@ -55,28 +55,44 @@
             encontar casos da sua ong
           </p>
 
-          <a class="back-link" href="./index.html">
+          <a class="back-link" href="./Login.html">
             <span>
               <img src="./assets/img/icon/log-in.svg" alt="icon Login"
             /></span>
-            <p>Voltar</p>
+            <p>Ja sou aluno</p>
           </a>
         </header>
         <article class="form">
           <form class="inputs">
             <p class="aviso"></p>
-            <input type="text" class="input" placeholder="Nome" />
+            <input type="nome" class="input" placeholder="Nome" />
+            <input type="cpf" class="input" placeholder="Cpf" />
             <input type="email" class="input" placeholder="E-mail" />
-            <input type="senha" class="input" placeholder="senha" />
-            <input class="input" placeholder="WhatsApp" />
+            <input type="senha" class="input" placeholder="Senha" />
+            <input
+              type="com-senha"
+              class="input"
+              placeholder="Confirmar senha"
+            />
+            <input type="telefone" class="input" placeholder="Telefone" />
             <div class="input-group">
               <select class="input" name="uf">
                 <option value="">Selecione o Estado</option>
               </select>
-              <select class="input" name="city" disabled>
+              <select class="input" name="cidade" disabled>
                 <option value="">Selecione o Cidade</option>
               </select>
             </div>
+
+            <div class="input-group">
+              <input type="cep" class="input" placeholder="CEP" />
+              <input type="numero" class="input" placeholder="Nº" />
+            </div>
+
+            <input type="bairro" class="input" placeholder="Bairro" />
+            <input type="endereço" class="input" placeholder="Endereço" />
+            <input type="complemento" class="input" placeholder="Complemento" />
+            <input type="checkbox" class="input" name="termos" />
             <button class="button input">Cadastrar</button>
           </form>
         </article>

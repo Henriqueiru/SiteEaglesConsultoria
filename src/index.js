@@ -19,7 +19,7 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin, ScrollToPlugin);
 
-gsap.to(".b1", { duration: 2, text: "Seja bem-vindo à", ease: "none" });
+gsap.to(".b1", { duration: 2, text: "Seja bem-vindo a", ease: "none" });
 
 gsap.to(".b2", {
   duration: 2,

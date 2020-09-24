@@ -26,9 +26,7 @@ body {
   }
 }
 
-
 .container {
-
   width: 100%;
   max-width: 1120px;
   height: 100vh;
@@ -43,7 +41,6 @@ body {
 
     display: grid;
     place-content: center;
-
   }
 
   .row {
@@ -63,7 +60,6 @@ body {
       justify-content: center;
       height: 100%;
       flex-direction: column;
-
     }
 
     header {
@@ -76,17 +72,11 @@ body {
         text-align: center;
 
         padding: 0 0em;
-
-
-
-
       }
 
       img {
         width: 300px;
         max-width: 0 auto;
-
-
       }
 
       h1 {
@@ -95,12 +85,9 @@ body {
         font-weight: 300;
         color: #0f0f0fb2;
 
-
         @media only screen and(max-width:786px) {
           margin: 32px 0 32px;
         }
-
-
       }
 
       p {
@@ -111,28 +98,24 @@ body {
     }
 
     .form {
+      margin-top: 4em;
       form {
         width: 100%;
         max-width: 450px;
 
         .input-group {
           display: flex;
+          margin-top: 0.5em;
 
-          input+input {
+          input + input {
             margin-left: 8px;
           }
         }
-
-
-
       }
 
       input {
         margin-bottom: 8px;
       }
-
-
-
     }
   }
 }
